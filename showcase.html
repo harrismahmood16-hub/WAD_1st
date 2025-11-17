@@ -1,51 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Showcase - Harris Mahmood</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* SKILLS PAGE STYLES — RED THEME */
+.skills-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    animation: fadeIn 0.4s ease-in-out;
+}
 
-<header>
-    <h1 class="logo"> Showcase.html </h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="skills.html">Skills</a>
-        <a href="showcase.html">Business Showcase</a>
-        <a href="problem.html">Problem-Solving</a>
-    </nav>
-</header>
+/* Section Blocks */
+.section-block {
+    background: #fff5f5; /* Soft red tint */
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #cc1f1f; /* Strong red accent */
+    box-shadow: 0 4px 16px rgba(204, 31, 31, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
 
-<section class="content">
+.section-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 22px rgba(204, 31, 31, 0.28);
+}
 
-    <h2>Project 1: Restaurant Digital Transformation Website</h2>
-    <p><strong>Role:</strong> Lead Developer</p>
-    <p><strong>Problem:</strong> A local restaurant lacked an online system for bookings and customer engagement.</p>
-    <p><strong>Outcome:</strong> Designed a responsive web page with social links, contact info, and an automated email-generating form.</p>
-    <p><strong>Design Concept:</strong> The layout prioritises simplicity, showing essential business details first and guiding users toward an interactive form. This structure increases customer interaction while keeping navigation intuitive.</p>
+/* Section Titles */
+.section-title {
+    color: #b31313;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-bottom: 2px solid #e63939;
+    padding-bottom: 5px;
+}
 
-    <hr>
+/* Certificate & List Style */
+.styled-list li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+    font-size: 1.08rem;
+    padding-left: 8px;
+    border-left: 3px solid #ff4d4d;
+}
 
-    <h2>Project 2: Tradesman Portfolio Website</h2>
-    <p><strong>Role:</strong> Front-End Developer</p>
-    <p><strong>Problem:</strong> A self-employed electrician needed an online profile to showcase past jobs.</p>
-    <p><strong>Outcome:</strong> Built a 3-page responsive site highlighting services, testimonials, and a contact section.</p>
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
 
-    <hr>
+.skills-grid li {
+    background: #ffffff;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 1px solid #ffd3d3;
+    box-shadow: 0 1px 5px rgba(204, 31, 31, 0.15);
+    transition: transform 0.25s, background 0.25s, border 0.2s;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
 
-    <h2>Project 3: Student Campus Navigation App Prototype</h2>
-    <p><strong>Role:</strong> Project Coordinator & UI Developer</p>
-    <p><strong>Problem:</strong> Students had difficulty navigating campus buildings.</p>
-    <p><strong>Outcome:</strong> Worked with a team to design an interactive map prototype and managed team workflow using agile methods.</p>
+.skills-grid li:hover {
+    background: #ffeaea;
+    border: 1px solid #e63939;
+    transform: translateY(-3px);
+}
 
-</section>
+/* Work Experience Table */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 18px;
+    box-shadow: 0 3px 12px rgba(204, 31, 31, 0.15);
+}
 
-<footer>
-    <p>© 2025 Harris Mahmood</p>
-</footer>
+.experience-table th {
+    background: #cc1f1f;
+    color: white;
+    padding: 14px;
+    font-size: 1rem;
+    text-align: left;
+}
 
-</body>
-</html>
+.experience-table td {
+    padding: 14px;
+    border-bottom: 1px solid #f8c0c0;
+    font-size: 1.04rem;
+}
+
+.experience-table tr:hover td {
+    background: #ffe0e0;
+}
+
+/* Navigation highlight */
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #cc1f1f !important;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
