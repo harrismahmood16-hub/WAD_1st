@@ -1,195 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Menu - Harris Mahmood</title>
-
-    <!-- Luxury Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            background: #ffffff;
-            font-family: 'Lora', serif;
-            color: #333;
-        }
-
-        /* Header ------------------------------------------------------ */
-        .lux-header {
-            background: #8b0000;
-            padding: 25px;
-            text-align: center;
-        }
-
-        .lux-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 42px;
-            color: gold;
-            margin: 0;
-            letter-spacing: 2px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        nav a:hover, nav .active {
-            color: gold;
-        }
-
-        /* Section Layout -------------------------------------------- */
-        .contact-container {
-            width: 80%;
-            margin: 40px auto;
-        }
-
-        .menu-section {
-            background: #8b0000;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 35px;
-            color: white;
-            border: 3px solid gold;
-        }
-
-        .menu-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            margin-bottom: 10px;
-            color: gold;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 2px;
-        }
-
-        .menu-description {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        /* Tables ------------------------------------------------------ */
-        .menu-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 18px;
-        }
-
-        .menu-table th, .menu-table td {
-            padding: 12px 10px;
-            border-bottom: 1px solid gold;
-        }
-
-        .menu-table th {
-            text-align: left;
-            color: gold;
-            font-weight: bold;
-            width: 30%;
-        }
-
-        .menu-table a {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        .menu-table a:hover {
-            color: gold;
-        }
-
-        /* Footer ------------------------------------------------------ */
-        .lux-footer {
-            text-align: center;
-            padding: 20px;
-            background: #8b0000;
-            color: gold;
-            margin-top: 40px;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robertos — Reservations</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header class="lux-header">
-    <h1 class="lux-logo">Contact Menu</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html" class="active">Contact</a>
-        <a href="skills.html">Skills</a>
-        <a href="business.html">Business Showcase</a>
-        <a href="problem.html">Problem-Solving</a>
+  <header class="lux-header">
+    <h1 class="lux-logo">Robertos</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" class="active">Reservations</a>
+      <a href="skills.html">Services</a>
+      <a href="showcase.html">Signature</a>
+      <a href="problem-solving.html">Solutions</a>
     </nav>
-</header>
+  </header>
 
-<section class="contact-container">
+  <main class="container">
+    <section class="menu-section">
+      <h2 class="menu-title">Reservations & Private Dining</h2>
+      <p class="lead">Reserve a table, request a private dining experience, or enquire about events.</p>
 
-    <!-- Contact Information -->
-    <div class="menu-section">
-        <h2 class="menu-title">Chef’s Direct Line</h2>
-        <p class="menu-description">
-            For enquiries, reservations, collaborations, or portfolio discussions,  
-            please reach out using the contact details below.
-            <br>Average response time: <strong>24–48 hours</strong>.
+      <form id="reservationForm" class="card" style="padding:18px;">
+        <div class="form-row">
+          <div class="col">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Your full name">
+          </div>
+          <div class="col">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+44 7...">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="col">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="col">
+            <label for="time">Time</label>
+            <input id="time" name="time" type="time" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="notes">Notes (dietary requirements, occasion)</label>
+          <textarea id="notes" name="notes" placeholder="E.g. vegan, birthday table"></textarea>
+        </div>
+
+        <p class="form-note">We will confirm your reservation via email. Below this form you will see a preview of the message sent.</p>
+
+        <p class="center" style="margin-top:12px;">
+          <button class="btn" type="submit">Send Reservation Request</button>
         </p>
 
-        <table class="menu-table">
-            <tr>
-                <th>Email</th>
-                <td>harrismahmood.dev@example.com</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>+44 7123 456789</td>
-            </tr>
-            <tr>
-                <th>Location</th>
-                <td>Manchester, United Kingdom</td>
-            </tr>
-        </table>
-    </div>
+        <div class="menu-section" style="margin-top:18px;">
+          <h3 class="menu-title" style="font-size:18px;">Reservation Preview</h3>
+          <pre id="reservationPreview" style="white-space:pre-wrap; font-family:inherit; background:#fff; padding:14px; border-radius:8px; border:1px solid #ffe5e5;"></pre>
+        </div>
+      </form>
+    </section>
 
-    <!-- Social Media Section -->
-    <div class="menu-section">
-        <h2 class="menu-title">Social Flavours</h2>
-        <p class="menu-description">
-            A curated selection of social platforms — each offering a taste of creativity  
-            and professional digital craftsmanship.
-        </p>
+    <section class="menu-section">
+      <h2 class="menu-title">Contact Details</h2>
+      <table class="info-table">
+        <tr><th>Phone</th><td>0123 456 789</td></tr>
+        <tr><th>Email</th><td>reservations@robertos.example.com</td></tr>
+        <tr><th>Address</th><td>12 Riverside Street, Manchester, UK</td></tr>
+        <tr><th>Opening</th><td>Mon–Sun: 11:00 — 23:00</td></tr>
+      </table>
+    </section>
 
-        <table class="menu-table">
-            <tr>
-                <th>Platform</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>Facebook</td>
-                <td><a href="https://facebook.com/harris.mahmood" target="_blank">facebook.com/harris.mahmood</a></td>
-            </tr>
-            <tr>
-                <td>Instagram</td>
-                <td><a href="https://instagram.com/harris.codes" target="_blank">@harris.codes</a></td>
-            </tr>
-            <tr>
-                <td>Twitter / X</td>
-                <td><a href="https://twitter.com/harris_dev" target="_blank">@harris_dev</a></td>
-            </tr>
-            <tr>
-                <td>LinkedIn</td>
-                <td><a href="https://www.linkedin.com/in/harrismahmood/" target="_blank">linkedin.com/in/harrismahmood</a></td>
-            </tr>
-        </table>
-    </div>
+  </main>
 
-</section>
+  <footer class="lux-footer">
+    © 2025 Robertos — Reservations & Events
+  </footer>
 
-<footer class="lux-footer">
-    <p>© 2025 Harris Mahmood — Crafted in Luxury Restaurant Menu Style</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
