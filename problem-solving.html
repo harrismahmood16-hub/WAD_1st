@@ -2,225 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem-Solving | Digital Transformation</title>
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Harris Mahmood</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1 class="logo">Restaurant Digital Transformation</h1>
+    <h1 class="logo">Contact Me</h1>
     <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
         <a href="skills.html">Skills</a>
         <a href="business.html">Business Showcase</a>
-        <a href="problem.html" class="active">Problem-Solving</a>
+        <a href="problem.html">Problem-Solving</a>
     </nav>
 </header>
 
-<section class="problem-container">
+<section class="contact-container">
 
-    <!-- BUSINESS CONTEXT -->
-    <div class="section-header-red">
-        <h2>Business Context</h2>
+    <!-- Personal Contact Info -->
+    <div class="section-block">
+        <h2 class="section-title">Personal Contact Details</h2>
+
         <p>
-            This page demonstrates how a modern restaurant can benefit from a digital transformation 
-            strategy designed to boost customer engagement, strengthen online visibility, streamline bookings, 
-            and improve communication. The aim is to provide customers with simple, clear, and professional 
-            access to essential information and interactive features.
+            I am available for collaborations, web development work, digital transformation projects, 
+            and general enquiries. Please use the details below to get in touch.  
+            <br><strong>Average response time: 24–48 hours</strong>.
         </p>
-    </div>
 
-    <!-- CONTACT DETAILS TABLE -->
-    <div class="info-box-red">
-        <h3>Restaurant Contact Details</h3>
-        <table class="red-table">
+        <table class="experience-table">
             <tr>
-                <th>Phone</th>
-                <td>0123 456 789</td>
+                <th>📧 Email</th>
+                <td><strong>harrismahmood.dev@example.com</strong></td>
             </tr>
             <tr>
-                <th>Email</th>
-                <td>reservations@samplebistro.com</td>
+                <th>📞 Phone</th>
+                <td><strong>+44 7123 456789</strong></td>
             </tr>
             <tr>
-                <th>Location</th>
-                <td>12 Riverside Street, Manchester, UK</td>
+                <th>📍 Location</th>
+                <td><strong>Manchester, United Kingdom</strong></td>
             </tr>
         </table>
     </div>
 
-    <!-- SOCIAL MEDIA TABLE -->
-    <div class="info-box-red">
-        <h3>Social Media Integration</h3>
-        <table class="red-table">
+    <!-- Business Section -->
+    <div class="section-block">
+        <h2 class="section-title">Business Enquiries</h2>
+
+        <p>
+            For work-related projects or professional services, please use my business contact.  
+            This ensures your request is prioritised.
+        </p>
+
+        <table class="experience-table">
+            <tr>
+                <th>🏢 Business Email</th>
+                <td><strong>business@harrismahmood.co.uk</strong></td>
+            </tr>
+            <tr>
+                <th>🕒 Priority Response</th>
+                <td>Within <strong>12 hours</strong> for business clients</td>
+            </tr>
+            <tr>
+                <th>💼 Services Offered</th>
+                <td>
+                    <ul style="padding-left: 20px; margin: 0;">
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Digital Transformation Solutions</li>
+                        <li>Social Media & Branding</li>
+                        <li>UI/UX Design</li>
+                        <li>Technical Troubleshooting & IT Support</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Social Media -->
+    <div class="section-block">
+        <h2 class="section-title">Social Media Profiles</h2>
+        <p>Follow me and get updates on new projects, development work, and digital content:</p>
+
+        <table class="experience-table">
             <tr>
                 <th>Platform</th>
-                <th>Link</th>
+                <th>Profile</th>
             </tr>
             <tr>
-                <td>Facebook</td>
-                <td><a href="#" class="table-link">facebook.com/samplebistro</a></td>
+                <td>📘 Facebook</td>
+                <td>
+                    <a href="https://facebook.com/harris.mahmood" target="_blank">
+                        facebook.com/harris.mahmood
+                    </a>
+                </td>
             </tr>
             <tr>
-                <td>Instagram</td>
-                <td><a href="#" class="table-link">@samplebistro</a></td>
+                <td>📸 Instagram</td>
+                <td>
+                    <a href="https://instagram.com/harris.codes" target="_blank">
+                        @harris.codes
+                    </a>
+                </td>
             </tr>
             <tr>
-                <td>Twitter / X</td>
-                <td><a href="#" class="table-link">@samplebistro_official</a></td>
+                <td>🐦 Twitter / X</td>
+                <td>
+                    <a href="https://twitter.com/harris_dev" target="_blank">
+                        @harris_dev
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>💼 LinkedIn</td>
+                <td>
+                    <a href="https://www.linkedin.com/in/harrismahmood/" target="_blank">
+                        linkedin.com/in/harrismahmood
+                    </a>
+                </td>
             </tr>
         </table>
-    </div>
-
-    <!-- FORM -->
-    <div class="form-box-red">
-        <h3>Booking / Feedback Form</h3>
-        <p>
-            Customers can submit booking or feedback requests using the interactive form below. 
-            Once submitted, the form automatically generates a formatted email message that the user 
-            can copy and send. No database connection is required.
-        </p>
-
-        <form id="bookingForm">
-            <label>Name</label>
-            <input type="text" id="name" required>
-
-            <label>Email</label>
-            <input type="email" id="email" required>
-
-            <label>Booking / Feedback Message</label>
-            <textarea id="message" required></textarea>
-
-            <button type="submit">Generate Email</button>
-        </form>
-
-        <h4>Generated Email Output</h4>
-        <pre id="generatedEmail" class="output-box-red"></pre>
     </div>
 
 </section>
 
 <footer>
-    <p>© 2025 Harris Mahmood</p>
+    <p>© 2025 Harris Mahmood — All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-/* PROBLEM-SOLVING PAGE — RED THEME */
-.problem-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-/* Section header */
-.section-header-red {
-    background: #fff3f3;
-    border-left: 6px solid #cc1f1f;
-    padding: 22px;
-    border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(204, 31, 31, 0.1);
-    margin-bottom: 25px;
-}
-
-.section-header-red h2 {
-    color: #b31313;
-    margin-bottom: 10px;
-}
-
-/* Info boxes */
-.info-box-red {
-    background: #fff5f5;
-    padding: 22px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-left: 6px solid #e03636;
-    box-shadow: 0 4px 14px rgba(204, 31, 31, 0.12);
-}
-
-/* Red styled tables */
-.red-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-.red-table th {
-    background: #cc1f1f;
-    color: white;
-    padding: 13px;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.red-table td {
-    padding: 12px;
-    border-bottom: 1px solid #f7bcbc;
-    background: #ffffff;
-}
-
-.red-table tr:hover td {
-    background: #ffe0e0;
-}
-
-.table-link {
-    color: #cc1f1f;
-    font-weight: bold;
-}
-
-.table-link:hover {
-    text-decoration: underline;
-}
-
-/* Form styling */
-.form-box-red {
-    background: #fff3f3;
-    padding: 25px;
-    margin-top: 30px;
-    border-radius: 10px;
-    border-left: 6px solid #cc1f1f;
-    box-shadow: 0 4px 14px rgba(204, 31, 31, 0.12);
-}
-
-.form-box-red input,
-.form-box-red textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 12px 0;
-    border-radius: 6px;
-    border: 1px solid #e57878;
-}
-
-.form-box-red button {
-    background: #cc1f1f;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 6px;
-}
-
-.form-box-red button:hover {
-    background: #a91313;
-}
-
-/* Output box */
-.output-box-red {
-    background: #fffafa;
-    padding: 15px;
-    border: 1px solid #e8b4b4;
-    border-radius: 6px;
-    margin-top: 15px;
-    white-space: pre-wrap;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(12px); }
-    to { opacity: 1; transform: translateY(0); }
-}
