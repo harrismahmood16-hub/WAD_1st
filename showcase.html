@@ -1,108 +1,136 @@
-/* SKILLS PAGE STYLES — RED THEME */
+/* ================================
+   SKILLS PAGE — PROFESSIONAL RED THEME
+   ================================ */
+
+/* Container */
 .skills-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    animation: fadeIn 0.4s ease-in-out;
+    max-width: 980px;
+    margin: 50px auto;
+    padding: 25px;
+    animation: fadeIn 0.5s ease-in-out;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Section Blocks */
+/* ================================
+   SECTION BLOCKS
+   ================================ */
 .section-block {
-    background: #fff5f5; /* Soft red tint */
-    padding: 28px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    border-left: 6px solid #cc1f1f; /* Strong red accent */
-    box-shadow: 0 4px 16px rgba(204, 31, 31, 0.15);
-    transition: transform 0.25s, box-shadow 0.25s;
+    background: #fff4f4; 
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 14px;
+    border-left: 6px solid #d11b1b;
+    box-shadow: 0 6px 18px rgba(190, 0, 0, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .section-block:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 22px rgba(204, 31, 31, 0.28);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(190, 0, 0, 0.22);
 }
 
 /* Section Titles */
 .section-title {
-    color: #b31313;
+    color: #b11010;
     margin-bottom: 18px;
-    font-size: 1.7rem;
-    font-weight: 700;
-    border-bottom: 2px solid #e63939;
-    padding-bottom: 5px;
+    font-size: 1.85rem;
+    font-weight: 800;
+    border-bottom: 2px solid #e53939;
+    padding-bottom: 6px;
+    letter-spacing: 0.5px;
 }
 
-/* Certificate & List Style */
+/* ================================
+   LIST STYLES
+   ================================ */
 .styled-list li {
     margin-bottom: 12px;
-    line-height: 1.8;
-    font-size: 1.08rem;
-    padding-left: 8px;
-    border-left: 3px solid #ff4d4d;
+    line-height: 1.75;
+    font-size: 1.12rem;
+    padding: 6px 0 6px 12px;
+    border-left: 4px solid #ff4343;
+    background: #fff;
+    border-radius: 6px;
+    transition: 0.2s;
 }
 
-/* Skills Grid */
+.styled-list li:hover {
+    background: #ffeaea;
+    border-left-color: #d11b1b;
+}
+
+/* ================================
+   SKILLS GRID
+   ================================ */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    margin-top: 10px;
 }
 
 .skills-grid li {
     background: #ffffff;
-    padding: 15px 18px;
-    border-radius: 10px;
-    border: 1px solid #ffd3d3;
-    box-shadow: 0 1px 5px rgba(204, 31, 31, 0.15);
-    transition: transform 0.25s, background 0.25s, border 0.2s;
-    font-size: 1.05rem;
+    padding: 18px 20px;
+    border-radius: 12px;
+    border: 1px solid #ffc2c2;
+    box-shadow: 0 2px 8px rgba(190, 0, 0, 0.12);
+    transition: 0.25s ease;
+    font-size: 1.08rem;
     font-weight: 500;
 }
 
 .skills-grid li:hover {
-    background: #ffeaea;
-    border: 1px solid #e63939;
-    transform: translateY(-3px);
+    background: #ffe5e5;
+    border-color: #e01c1c;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(190, 0, 0, 0.22);
 }
 
-/* Work Experience Table */
+/* ================================
+   EXPERIENCE TABLE
+   ================================ */
 .experience-table {
     width: 100%;
     border-collapse: collapse;
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 18px;
-    box-shadow: 0 3px 12px rgba(204, 31, 31, 0.15);
+    margin-top: 20px;
+    box-shadow: 0 4px 14px rgba(190, 0, 0, 0.18);
 }
 
 .experience-table th {
-    background: #cc1f1f;
+    background: #c71616;
     color: white;
-    padding: 14px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 1.1rem;
     text-align: left;
 }
 
 .experience-table td {
-    padding: 14px;
-    border-bottom: 1px solid #f8c0c0;
-    font-size: 1.04rem;
+    padding: 15px;
+    border-bottom: 1px solid #ffd1d1;
+    font-size: 1.07rem;
 }
 
 .experience-table tr:hover td {
-    background: #ffe0e0;
+    background: #ffe1e1;
 }
 
-/* Navigation highlight */
+/* ================================
+   NAVIGATION HIGHLIGHT
+   ================================ */
 nav a.active {
     text-decoration: underline;
-    font-weight: bold;
-    color: #cc1f1f !important;
+    font-weight: 700;
+    color: #c71616 !important;
 }
 
-/* Fade-in animation */
+/* ================================
+   ANIMATION
+   ================================ */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(12px); }
+    from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
 }
