@@ -13,52 +13,65 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
-        <a href="skills.html">Skills</a>
+        <a href="skills.html" class="active">Skills</a>
         <a href="business.html">Business Showcase</a>
         <a href="problem.html">Problem-Solving</a>
     </nav>
 </header>
 
-<section class="content">
-    <h2>Certificates & Diplomas</h2>
-    <ul>
-        <li>Diploma in Web Development – 2024</li>
-        <li>Certificate in IT Support – 2023</li>
-        <li>Google Digital Marketing Certificate – 2024</li>
-    </ul>
+<section class="content skills-container">
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Responsive Web Design</li>
-        <li>Version Control (Git & GitHub)</li>
-        <li>IT Support & Troubleshooting</li>
-        <li>UI/UX Layout Planning</li>
-    </ul>
+    <div class="section-block">
+        <h2 class="section-title">Certificates & Diplomas</h2>
+        <ul class="styled-list">
+            <li><strong>Diploma in Web Development</strong> – Manchester Tech Institute (2024)</li>
+            <li><strong>Certificate in IT Support</strong> – Northpoint Training Academy (2023)</li>
+            <li><strong>Google Digital Marketing Certificate</strong> – Google Career Certificates (2024)</li>
+            <li><strong>Cyber Essentials Foundation</strong> – 2023</li>
+        </ul>
+    </div>
 
-    <h2>Work Experience</h2>
-    <table>
-        <tr>
-            <th>Role</th>
-            <th>Company</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>Junior Web Developer</td>
-            <td>Freelance</td>
-            <td>2024–2025</td>
-        </tr>
-        <tr>
-            <td>IT Support Technician</td>
-            <td>Northpoint Solutions</td>
-            <td>2023–2024</td>
-        </tr>
-        <tr>
-            <td>Project Assistant</td>
-            <td>CityTech Innovations</td>
-            <td>2022–2023</td>
-        </tr>
-    </table>
+    <div class="section-block">
+        <h2 class="section-title">Technical Skills</h2>
+        <ul class="skills-grid">
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Wireframing</li>
+            <li>Git & GitHub</li>
+            <li>Python (Beginner–Intermediate)</li>
+            <li>IT Support & Troubleshooting</li>
+            <li>Website Hosting & Deployment</li>
+            <li>Digital Marketing Fundamentals</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <h2 class="section-title">Work Experience</h2>
+
+        <table class="experience-table">
+            <tr>
+                <th>Role</th>
+                <th>Company</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Junior Web Developer</td>
+                <td>Freelance / Portfolio Projects</td>
+                <td>2024–2025</td>
+            </tr>
+            <tr>
+                <td>IT Support Technician</td>
+                <td>Northpoint Solutions</td>
+                <td>2023–2024</td>
+            </tr>
+            <tr>
+                <td>Project Assistant</td>
+                <td>CityTech Innovations</td>
+                <td>2022–2023</td>
+            </tr>
+        </table>
+    </div>
+
 </section>
 
 <footer>
@@ -67,3 +80,60 @@
 
 </body>
 </html>
+/* SKILLS PAGE STYLES */
+.skills-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section-block {
+    background: #f8faff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #4a90e2;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+.styled-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.experience-table th {
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.experience-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
