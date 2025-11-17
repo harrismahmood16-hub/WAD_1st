@@ -3,58 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem-Solving | Digital Transformation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Luxury Problem-Solving Skills Menu</title>
+
+    <style>
+        body {
+            background: #ffffff;
+            margin: 0;
+            font-family: "Georgia", serif;
+            color: #2b2b2b;
+        }
+
+        header {
+            background: #8b0000;
+            color: gold;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-bottom: 8px solid gold;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: gold;
+            margin: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* MENU WRAPPER */
+        .menu-wrapper {
+            width: 85%;
+            margin: 50px auto;
+            padding: 40px;
+            border: 6px double #8b0000;
+            border-radius: 20px;
+            background: #fffef6;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .section-heading {
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 35px;
+            color: #8b0000;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            width: 200px;
+            margin: 20px auto;
+            border-top: 4px solid gold;
+        }
+
+        /* MENU GRID LIKE RESTAURANT */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            background: #fff5f5;
+            border-left: 8px solid #8b0000;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .menu-title {
+            font-size: 26px;
+            color: #8b0000;
+            margin-bottom: 10px;
+            font-weight: bold;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 4px;
+        }
+
+        .menu-description {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* TABLES (LUXURY STYLE) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th {
+            background: #8b0000;
+            color: gold;
+            padding: 16px;
+            font-size: 20px;
+        }
+
+        td {
+            padding: 14px;
+            font-size: 18px;
+            border-bottom: 1px solid #f0c0c0;
+        }
+
+        tr:hover td {
+            background: #ffe5e5;
+        }
+
+        footer {
+            background: #8b0000;
+            color: gold;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 18px;
+            border-top: 5px solid gold;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
-    <h1 class="logo">Digital Transformation Project</h1>
+    Luxury Problem-Solving Menu
     <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
         <a href="skills.html">Skills</a>
-        <a href="business.html">Business Showcase</a>
-        <a href="problem.html" class="active">Problem-Solving</a>
+        <a href="business.html">Business</a>
+        <a href="contact.html">Contact</a>
+        <a href="problem.html">Problem-Solving</a>
     </nav>
 </header>
 
-<section class="problem-container">
+<div class="menu-wrapper">
 
-    <!-- Business Context ----------------------------------------------------->
-    <div class="section-block">
-        <h2 class="section-title">Business Context: Restaurant Digital Transformation</h2>
-        <p>
-            This page demonstrates how a restaurant can use modern web technologies to increase customer 
-            engagement, streamline booking processes, and improve communication. By enhancing the digital 
-            presence of the restaurant, customers can interact more efficiently with the business — from 
-            checking contact details to submitting booking requests.
-        </p>
+    <h1 class="section-heading">Signature Business Solutions</h1>
+    <div class="divider"></div>
 
-        <p>
-            The goal is to show how practical web development skills can be applied to real-world business
-            needs, providing value through improved accessibility, professionalism, and user engagement.
-        </p>
+    <p style="font-size:20px; text-align:center;">
+        A curated selection of premium business problem-solving abilities, crafted with precision and
+        presented in a luxury menu format. Each skill is refined to enhance productivity,
+        strengthen operations, and elevate business performance.
+    </p>
+
+    <!-- LUXURY MENU GRID -->
+    <div class="menu-grid">
+
+        <!-- ITEM 1 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Critical Thinking</h2>
+            <p class="menu-description">
+                A premium analytical method assessing facts, impacts, and risks to deliver accurate,
+                evidence-based solutions. Ideal for resolving operational conflicts and improving business structure.
+            </p>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Analytical Reasoning</h2>
+            <p class="menu-description">
+                Breaks down complex business challenges into organised sections, allowing decision-makers
+                to understand internal issues clearly and act strategically.
+            </p>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Strategic Decision-Making</h2>
+            <p class="menu-description">
+                Uses data, forecasting, and risk evaluation to select the most effective business direction.
+                Ensures consistent and reliable high-level results.
+            </p>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Technical Troubleshooting</h2>
+            <p class="menu-description">
+                Professionally resolves technical issues, system faults, and software errors
+                using proven diagnostic and repair techniques suitable for modern digital environments.
+            </p>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Creative Innovation</h2>
+            <p class="menu-description">
+                Generates fresh, unique business solutions and designs that modernise online presence,
+                streamline processes, and increase customer engagement.
+            </p>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="menu-item">
+            <h2 class="menu-title">Communication & Collaboration</h2>
+            <p class="menu-description">
+                Builds strong partnerships with staff, customers, and stakeholders,
+                ensuring every solution is implemented smoothly and professionally.
+            </p>
+        </div>
+
     </div>
 
-    <!-- Restaurant Contact Information ---------------------------------------->
-    <div class="section-block">
-        <h2 class="section-title">Restaurant Contact Details</h2>
+    <br><br>
 
-        <table class="experience-table">
-            <tr>
-                <th>Restaurant Name</th>
-                <td>Sample Riverside Bistro</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>0123 456 789</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td>reservations@samplebistro.com</td>
-            </tr>
-            <tr>
-                <th>Address</th>
-                <td>12 Riverside Street, Manchester, UK</td>
+    <!-- TABLE SECTION -->
+    <h1 class="section-heading">Business Challenges & Premium Solutions</h1>
+    <div class="divider"></div>
+
+    <table>
+        <tr>
+            <th>Business Challenge</th>
+            <th>Luxury Solution Approach</th>
+        </tr>
+
+        <tr>
+            <td>Low Customer Engagement</td>
+            <td>Modernised branding, premium web design, improved accessibility, and structured communication flow.</td>
+        </tr>
+
+        <tr>
+            <td>Inefficient Processes</td>
+            <td>Workflow mapping, automation, and performance-focused operational adjustments.</td>
+        </tr>
+
+        <tr>
+            <td>Technical System Issues</td>
+            <td>Diagnostic testing, troubleshooting, system optimisation, and long-term repair solutions.</td>
+        </tr>
+
+        <tr>
+            <td>Poor Digital Presentation</td>
+            <td>Complete redesign with improved layout, structured pages, menu-style sections, and brand-consistent colours.</td>
+        </tr>
+
+        <tr>
+            <td>Unclear Customer Information</td>
+            <td>Enhanced contact pages, detailed business menus, and structured navigation enhancements.</td>
+        </tr>
+    </table>
+
+</div>
+
+<footer>
+    © 2025 Luxury Business Problem-Solving Menu — Presented in Premium Restaurant Style
+</footer>
+
+</body>
+</html>
