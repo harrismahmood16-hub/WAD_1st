@@ -97,3 +97,144 @@
   <script src="script.js"></script>
 </body>
 </html>
+3. CSS (style.css)
+Here’s a more professional CSS file that reflects that OpenTable-style clean layout + colour scheme:
+
+css
+Copy code
+/* Reset / base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333333;
+  line-height: 1.6;
+}
+
+a {
+  color: #c82333; /* Accent red */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+}
+
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 0;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  color: #222222;
+  text-align: center;
+}
+
+/* Sections */
+.section {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #222222;
+}
+
+/* Textbox style for emphasized text */
+.textbox {
+  background-color: #e9ecef;
+  border-left: 4px solid #c82333;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+/* Form styling */
+.book-form-section form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #c82333;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a71d2a;
+}
+
+/* Info text under form */
+.info-text {
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555555;
+}
+
+/* Social links section */
+.contact-section .social-links a {
+  margin-right: 16px;
+  font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-footer p {
+  color: #777777;
+  font-size: 0.9rem;
+}
