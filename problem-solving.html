@@ -1,1 +1,103 @@
-512ce5d617f077fc995512be6061201dfe3757ba
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving | Digital Transformation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Restaurant Digital Transformation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="skills.html">Skills</a>
+        <a href="business.html">Business Showcase</a>
+        <a href="problem.html" class="active">Problem-Solving</a>
+    </nav>
+</header>
+
+<section class="problem-container">
+
+    <div class="section-header">
+        <h2>Business Context</h2>
+        <p>
+            As part of a digital transformation case study, this web page demonstrates how a restaurant
+            can modernise its online presence. The primary goals include improving customer engagement,
+            streamlining bookings, and providing users with easy access to contact and social media details.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Restaurant Contact Details</h3>
+        <table class="contact-table">
+            <tr>
+                <th>Phone</th>
+                <td>0123 456 789</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>reservations@samplebistro.com</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>12 Riverside Street, Manchester, UK</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h3>Social Media Integration</h3>
+        <table class="social-table">
+            <tr>
+                <th>Platform</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td><a href="#">facebook.com/samplebistro</a></td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td><a href="#">@samplebistro</a></td>
+            </tr>
+            <tr>
+                <td>Twitter / X</td>
+                <td><a href="#">@samplebistro_official</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-box">
+        <h3>Booking / Feedback Form</h3>
+        <p>Users can submit a booking or feedback request. The form automatically generates a formatted email message.</p>
+
+        <form id="bookingForm">
+            <label>Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Booking / Feedback Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Generate Email</button>
+        </form>
+
+        <h4>Generated Email Output</h4>
+        <pre id="generatedEmail" class="output-box"></pre>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Harris Mahmood</p>
+</footer>
+
+</body>
+</html>
+
