@@ -2,110 +2,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Problem Solving — Restaurant Case Study</title>
-<link rel="stylesheet" href="style.css" />
-<style>
-body { font-family: Arial, Helvetica, sans-serif; background: #f0f4f8; color: #333; margin: 0; }
-.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-h1, h2, h3 { color: #111; }
-h1 { text-align: center; margin-bottom: 30px; }
-.section { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
-.textbox { background: #e6f0ff; border-left: 6px solid #007bff; padding: 15px; margin: 10px 0; border-radius: 6px; }
-label { font-weight: bold; display: block; margin-top: 12px; }
-input, textarea, select, button { font: inherit; padding: 10px; border: 1px solid #ccc; border-radius: 6px; width: 100%; margin-top: 4px; }
-button { background: #007bff; color: #fff; border: none; cursor: pointer; margin-top: 12px; transition: background 0.3s; }
-button:hover { background: #0056b3; }
-.social-links a { margin-right: 12px; text-decoration: none; color: #007bff; font-weight: 600; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Digital Transformation — Case Study</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container">
-<h1>Restaurant Digital Transformation — Case Study</h1>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="container">
+        <h1>Restaurant Digital Transformation Case Study</h1>
+      </div>
+    </header>
 
+    <main class="container">
+      <article class="section">
+        <h2>Business Context & Goals</h2>
+        <div class="textbox">
+          <p>The restaurant relied on manual phone bookings …</p>
+        </div>
+        <div class="textbox">
+          <p>Objectives include: <strong>1)</strong> faster booking …</p>
+        </div>
+      </article>
 
-<div class="section">
-<h2>Business Context & Goals</h2>
-<div class="textbox">
-<p>The restaurant relied on manual phone bookings and paper notes, resulting in missed reservations, delayed feedback, and poor customer engagement. The goal is a web-based solution that improves efficiency, streamlines bookings, and integrates social media to attract new customers.</p>
-</div>
-<div class="textbox">
-<p>Objectives include: <strong>1)</strong> faster booking handling, <strong>2)</strong> easier customer communication, <strong>3)</strong> professional online presence, and <strong>4)</strong> accessible design for all devices.</p>
-</div>
-</div>
+      <article class="section">
+        <h2>Implemented Features</h2>
+        <div class="textbox">
+          <ul>
+            <li>Social media integration</li>
+            <li>Clear contact info</li>
+            <li>Interactive booking form</li>
+            <li>Accessible design</li>
+            <li>Minimalist interface</li>
+          </ul>
+        </div>
+      </article>
 
+      <article class="section">
+        <h2>Problem-Solving Approach</h2>
+        <div class="textbox">
+          <p><strong>User Journey:</strong> The page …</p>
+        </div>
+        <div class="textbox">
+          <p><strong>Form Design:</strong> Fields include name, …</p>
+        </div>
+        <div class="textbox">
+          <p><strong>Visual Design:</strong> Clean layout …</p>
+        </div>
+      </article>
 
-<div class="section">
-<h2>Implemented Features</h2>
-<div class="textbox">
-<ul>
-<li>Social media integration: links to Facebook, Instagram, Twitter/X</li>
-<li>Clear display of restaurant contact info (email, phone)</li>
-<li>Interactive booking/feedback form that generates a pre-filled email</li>
-<li>Mobile-first and accessible design</li>
-<li>Minimalistic interface to reduce user friction</li>
-</ul>
-</div>
-</div>
+      <article class="section book-form-section">
+        <h2>Booking / Feedback Form</h2>
+        <form id="bookingForm">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required />
 
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
 
-<div class="section">
-<h2>Detailed Problem-Solving Approach</h2>
-<div class="textbox">
-<p><strong>User Journey:</strong> The page is structured to guide users from discovery (social & contact info), to action (booking form), to confirmation (auto-email). This improves engagement and reduces errors.</p>
-</div>
-<div class="textbox">
-<p><strong>Form Design:</strong> Fields include name, email, date/time, number of people, and special requests. Client-side validation ensures required fields are completed. The form uses a <code>mailto:</code> link to open the user's email client, ensuring compliance with assessment brief (no server/database).</p>
-</div>
-<div class="textbox">
-<p><strong>Visual Design:</strong> Clean layout with blue-highlighted text boxes for emphasis, card-style sections for readability, and consistent spacing. The design ensures clarity and reduces cognitive load for users.</p>
-</div>
-</div>
+          <label for="date">Preferred date/time (optional)</label>
+          <input id="date" name="date" type="datetime-local" />
 
+          <label for="people">Number of people (optional)</label>
+          <input id="people" name="people" type="number" min="1" />
 
-<div class="section">
-<h2>Booking / Feedback Form</h2>
-<form id="bookingForm">
-<label for="name">Full name</label>
-<input id="name" name="name" type="text" required />
+          <label for="message">Message / Special requests</label>
+          <textarea id="message" name="message" rows="4"></textarea>
 
+          <button type="submit">Send Booking / Feedback</button>
+        </form>
+        <p class="textbox info-text"><em>How it works:</em> The form builds a mailto URL …</p>
+      </article>
 
-<label for="email">Email</label>
-<input id="email" name="email" type="email" required />
+      <article class="section contact-section">
+        <h2>Contact & Social Links</h2>
+        <p class="social-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://twitter.com" target="_blank">Twitter / X</a>
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:restaurant@example.com">restaurant@example.com</a><br>
+        <strong>Phone:</strong> 0123 456 789</p>
+      </article>
+    </main>
 
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Restaurant Case Study. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 
-<label for="date">Preferred date/time (optional)</label>
-<input id="date" name="date" type="datetime-local" />
-
-
-<label for="people">Number of people (optional)</label>
-<input id="people" name="people" type="number" min="1" />
-
-
-<label for="message">Message / Special requests</label>
-<textarea id="message" name="message" rows="4"></textarea>
-
-
-<button type="submit">Send Booking / Feedback</button>
-</form>
-<p class="textbox"><em>How it works:</em> The form builds a mailto URL and opens your email client with a pre-filled message. This eliminates the need for server-side infrastructure while providing a real-world workflow.</p>
-</div>
-
-
-<div class="section">
-<h2>Contact & Social Links</h2>
-<p class="social-links">
-<a href="https://facebook.com" target="_blank">Facebook</a>
-<a href="https://instagram.com" target="_blank">Instagram</a>
-<a href="https://twitter.com" target="_blank">Twitter / X</a>
-</p>
-<p><strong>Email:</strong> <a href="mailto:restaurant@example.com">restaurant@example.com</a><br>
-<strong>Phone:</strong> 0123 456 789</p>
-</div>
-
-
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
