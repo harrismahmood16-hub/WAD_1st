@@ -21,41 +21,60 @@
 
 <main class="container">
 <section>
-<h1>Skills, Certificates & Experience</h1>
-
-
-<h2>Technical Skills</h2>
-<ul>
-<li>HTML5, CSS3, JavaScript (ES6+)</li>
-<li>Responsive & accessible design</li>
-<li>Git & basic build tooling</li>
-<li>UI/UX design fundamentals</li>
-<li>Form automation & mailto integration</li>
-</ul>
-
-
-<h2>Certificates & diplomas</h2>
-<ul>
-<li>Certificate: Front-End Web Development (example)</li>
-<li>Diploma: ICT / Web Technologies (example)</li>
-</ul>
-
-
-<h2>Work experience</h2>
-<table class="experience">
-<thead>
-<tr><th>Role</th><th>Organisation</th><th>Dates</th></tr>
-</thead>
-<tbody>
-<tr><td>Front-end Developer</td><td>Local Restaurant Group</td><td>2022 — 2024</td></tr>
-<tr><td>Freelance Web Developer</td><td>Small business clients</td><td>2020 — present</td></tr>
-</tbody>
-</table>
-
-
-<p>Replace the example certificates and dates with your real qualifications when ready.</p>
+<h1>My Skills</h1>
+<div class="skills-grid">
+<div class="skill-card">
+<h2>Front-End</h2>
+<p>HTML5, CSS3, JavaScript (ES6+)</p>
+</div>
+<div class="skill-card">
+<h2>Responsive & Accessible Design</h2>
+<p>Mobile-first layouts, WCAG standards, Flexbox & Grid</p>
+</div>
+<div class="skill-card">
+<h2>Version Control</h2>
+<p>Git/GitHub, basic build tooling</p>
+</div>
+<div class="skill-card">
+<h2>UI/UX Fundamentals</h2>
+<p>Wireframing, component structuring, user-focused layouts</p>
+</div>
+<div class="skill-card">
+<h2>Automation</h2>
+<p>Form workflows, mailto integrations, lightweight scripting</p>
+</div>
+</div>
 </section>
 </main>
+
+
 </body>
 </html>
 
+
+<!-- Add to style.css -->
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 16px;
+margin-top: 20px;
+}
+.skill-card {
+background: #f9f9f9;
+border-radius: 8px;
+padding: 16px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+transition: transform 0.2s;
+}
+.skill-card:hover {
+transform: translateY(-4px);
+}
+.skill-card h2 {
+margin-bottom: 8px;
+font-size: 1.1rem;
+}
+.skill-card p {
+margin: 0;
+font-size: 0.95rem;
+color: #333;
+}
