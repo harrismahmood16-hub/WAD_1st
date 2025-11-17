@@ -6,21 +6,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Skills — Harris</title>
 <link rel="stylesheet" href="style.css" />
+<style>
+body { font-family: Arial, Helvetica, sans-serif; background: #f0f2f5; color: #333; margin: 0; }
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+h1 { text-align: center; color: #111; margin-bottom: 30px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.skill-card { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+.skill-card:hover { transform: translateY(-6px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+.skill-card h2 { margin-bottom: 12px; font-size: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 6px; }
+.skill-card p { margin: 0; font-size: 1rem; line-height: 1.4; }
+</style>
 </head>
 <body>
-<header>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="contact.html">Contact</a>
-<a href="skills.html">Skills</a>
-<a href="showcase.html">Business Showcase</a>
-<a href="problem-solving.html">Problem-Solving</a>
-</nav>
-</header>
-
-
-<main class="container">
-<section>
+<div class="container">
 <h1>My Skills</h1>
 <div class="skills-grid">
 <div class="skill-card">
@@ -44,37 +42,6 @@
 <p>Form workflows, mailto integrations, lightweight scripting</p>
 </div>
 </div>
-</section>
-</main>
-
-
+</div>
 </body>
 </html>
-
-
-<!-- Add to style.css -->
-.skills-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 16px;
-margin-top: 20px;
-}
-.skill-card {
-background: #f9f9f9;
-border-radius: 8px;
-padding: 16px;
-box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-transition: transform 0.2s;
-}
-.skill-card:hover {
-transform: translateY(-4px);
-}
-.skill-card h2 {
-margin-bottom: 8px;
-font-size: 1.1rem;
-}
-.skill-card p {
-margin: 0;
-font-size: 0.95rem;
-color: #333;
-}
