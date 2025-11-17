@@ -1,1 +1,73 @@
+<!-- problem-solving.html -->
+<a href="showcase.html">Business Showcase</a>
+<a href="problem-solving.html">Problem-Solving</a>
+</nav>
+</header>
 
+
+<main class="container">
+<section>
+<h1>Restaurant Digital Transformation — Case Study</h1>
+
+
+<h2>Business context & goals</h2>
+<p>
+As CTO for a local restaurant, the goal is to support a low-cost digital transformation that improves customer engagement, modernises communication channels, and streamlines bookings without adding significant operational overhead. The solution must be web-based, accessible on mobile devices, integrate social media links, and avoid server-side databases (per assessment brief).
+</p>
+
+
+<h3>Required features implemented</h3>
+<ul>
+<li>Integration with social media: clear, visible links to Facebook, Instagram and Twitter/X.</li>
+<li>Display of the restaurant’s contact details (email and phone).</li>
+<li>Interactive booking/feedback form that builds an email to restaurant staff when submitted (no database).</li>
+</ul>
+
+
+<h3>Restaurant contact</h3>
+<p><strong>Email:</strong> <a href="mailto:restaurant@example.com">restaurant@example.com</a></p>
+<p><strong>Phone:</strong> 0123 456 789</p>
+
+
+<h3>Follow us</h3>
+<ul>
+<li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+<li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+<li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a></li>
+</ul>
+
+
+<h3>Booking / Feedback Form</h3>
+<form id="bookingForm">
+<label for="name">Full name</label><br />
+<input id="name" name="name" type="text" required /><br /><br />
+
+
+<label for="email">Email</label><br />
+<input id="email" name="email" type="email" required /><br /><br />
+
+
+<label for="date">Preferred date/time (optional)</label><br />
+<input id="date" name="date" type="datetime-local" /><br /><br />
+
+
+<label for="people">Number of people (optional)</label><br />
+<input id="people" name="people" type="number" min="1" /><br /><br />
+
+
+<label for="message">Message / Special requests</label><br />
+<textarea id="message" name="message" rows="4"></textarea><br /><br />
+
+
+<button type="submit">Send booking / feedback (opens your email)</button>
+</form>
+
+
+<p class="note">How it works: the form builds a mailto: URL and opens the default mail client with a pre-filled message. This approach avoids server-side components while delivering a real-world booking flow for the restaurant.</p>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
