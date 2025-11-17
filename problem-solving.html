@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Problem-Solving Page</title>
+    <title>Problem-Solving | Digital Transformation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -16,46 +16,81 @@
         <a href="contact.html">Contact</a>
         <a href="skills.html">Skills</a>
         <a href="business.html">Business Showcase</a>
-        <a href="problem.html">Problem-Solving</a>
+        <a href="problem.html" class="active">Problem-Solving</a>
     </nav>
 </header>
 
-<section class="content">
+<section class="problem-container">
 
-    <h2>Business Context</h2>
-    <p>
-        This page showcases how a restaurant can use a digital solution to improve communication, booking efficiency, 
-        and social media engagement. It demonstrates my web development skills applied to a real-world business need.
-    </p>
+    <div class="section-header">
+        <h2>Business Context</h2>
+        <p>
+            As part of a digital transformation case study, this web page demonstrates how a restaurant
+            can modernise its online presence. The primary goals include improving customer engagement,
+            streamlining bookings, and providing users with easy access to contact and social media details.
+        </p>
+    </div>
 
-    <h3>Social Media Links</h3>
-    <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter / X</a></li>
-    </ul>
+    <div class="info-box">
+        <h3>Restaurant Contact Details</h3>
+        <table class="contact-table">
+            <tr>
+                <th>Phone</th>
+                <td>0123 456 789</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>reservations@samplebistro.com</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>12 Riverside Street, Manchester, UK</td>
+            </tr>
+        </table>
+    </div>
 
-    <h3>Restaurant Contact Details</h3>
-    <p><strong>Phone:</strong> 0123 456 789</p>
-    <p><strong>Email:</strong> reservations@samplebistro.com</p>
-    <p><strong>Location:</strong> 12 Riverside Street, Manchester</p>
+    <div class="info-box">
+        <h3>Social Media Integration</h3>
+        <table class="social-table">
+            <tr>
+                <th>Platform</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td><a href="#">facebook.com/samplebistro</a></td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td><a href="#">@samplebistro</a></td>
+            </tr>
+            <tr>
+                <td>Twitter / X</td>
+                <td><a href="#">@samplebistro_official</a></td>
+            </tr>
+        </table>
+    </div>
 
-    <h3>Booking / Feedback Form</h3>
+    <div class="form-box">
+        <h3>Booking / Feedback Form</h3>
+        <p>Users can submit a booking or feedback request. The form automatically generates a formatted email message.</p>
 
-    <form id="bookingForm">
-        <label>Name:</label>
-        <input type="text" id="name" required>
+        <form id="bookingForm">
+            <label>Name</label>
+            <input type="text" id="name" required>
 
-        <label>Email:</label>
-        <input type="email" id="email" required>
+            <label>Email</label>
+            <input type="email" id="email" required>
 
-        <label>Booking / Feedback Message:</label>
-        <textarea id="message" required></textarea>
+            <label>Booking / Feedback Message</label>
+            <textarea id="message" required></textarea>
 
-        <button type="submit">Generate Email</button>
-    </form>
+            <button type="submit">Generate Email</button>
+        </form>
 
-    <p id="generatedEmail" class="output"></p>
+        <h4>Generated Email Output</h4>
+        <pre id="generatedEmail" class="output-box"></pre>
+    </div>
 
 </section>
 
@@ -65,3 +100,95 @@
 
 </body>
 </html>
+problem-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-left: 6px solid #4a90e2;
+}
+
+.section-header h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.info-box, .form-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8faff;
+    border-radius: 8px;
+    border: 1px solid #d9e6f7;
+}
+
+.info-box h3, .form-box h3 {
+    color: #4a90e2;
+    margin-bottom: 15px;
+    border-left: 4px solid #4a90e2;
+    padding-left: 10px;
+}
+
+.contact-table, .social-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.contact-table th, .social-table th {
+    background: #4a90e2;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.contact-table td, .social-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.social-table tr:hover td {
+    background: #eef5ff;
+}
+
+.form-box form {
+    margin-top: 15px;
+}
+
+.form-box input, .form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #bcd0e8;
+}
+
+.form-box button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-box button:hover {
+    background: #3a78c2;
+}
+
+.output-box {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    white-space: pre-wrap;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
