@@ -3,200 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | Harris Mahmood</title>
+    <title>Restaurant Digital Transformation | Menu Style</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: "Segoe UI", Arial, sans-serif; background: #fff8f8; }
+        header { background: #d11b1b; color: white; padding: 20px 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; font-weight: 600; text-decoration: none; }
+        nav a.active { text-decoration: underline; }
+
+        .menu-section { max-width: 900px; margin: 40px auto; padding: 20px; }
+        .menu-category { background: #fff4f4; border-left: 6px solid #d11b1b; padding: 20px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 6px 18px rgba(190,0,0,0.15);}
+        .menu-category h2 { color: #b11010; border-bottom: 2px solid #e53939; padding-bottom: 6px; margin-bottom: 15px; }
+
+        .menu-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ffcaca; }
+        .menu-item:last-child { border-bottom: none; }
+        .menu-item span { font-weight: 500; }
+
+        /* Form Styling */
+        .form-box { margin-top: 20px; padding: 15px; background: #ffeaea; border-radius: 8px; border: 1px solid #d11b1b; }
+        .form-box label { display: block; margin: 10px 0 5px; font-weight: 600; }
+        .form-box input, .form-box select, .form-box textarea { width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #cc1b1b; }
+        .form-box button { background: #d11b1b; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+        .form-box button:hover { background: #b11010; }
+
+        .output-box { background: #fff4f4; border: 1px solid #d11b1b; padding: 15px; margin-top: 15px; border-radius: 6px; white-space: pre-wrap; }
+
+        footer { text-align: center; margin-top: 40px; padding: 15px 0; background: #d11b1b; color: white; }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("bookingForm");
+            const output = document.getElementById("generatedEmail");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const type = document.getElementById("type").value;
+                const message = document.getElementById("message").value;
+
+                output.textContent = `To: reservations@samplebistro.com\nSubject: ${type} from ${name}\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nRequest Type: ${type}\nMessage:\n${message}`;
+            });
+        });
+    </script>
 </head>
 <body>
 
 <header>
-    <h1 class="logo">Harris Mahmood - Professional Skills</h1>
+    <h1>Sample Riverside Bistro</h1>
     <nav>
         <a href="index.html">Home</a>
-        <a href="problem.html">Problem Solving</a>
         <a href="contact.html">Contact</a>
-        <a href="skills.html" class="active">Skills</a>
+        <a href="skills.html">Skills</a>
         <a href="business.html">Business Showcase</a>
+        <a href="problem.html" class="active">Menu / Bookings</a>
     </nav>
 </header>
 
-<section class="skills-container">
+<section class="menu-section">
 
-    <!-- Technical Skills Section -->
-    <div class="section-block">
-        <h2 class="section-title">Technical Skills & Expertise</h2>
-        <p>My technical competencies allow me to create, develop, and maintain high-quality web solutions. I focus on efficiency, responsive design, and usability.</p>
-
-        <table class="experience-table">
-            <tr>
-                <th>Category</th>
-                <th>Details & Tools</th>
-                <th>Proficiency</th>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td>HTML5, CSS3, JavaScript, Responsive Web Design, Bootstrap, Tailwind CSS</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Programming Languages</td>
-                <td>Python, JavaScript, SQL</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>UI/UX & Design</td>
-                <td>Figma, Canva, Wireframing, Prototyping, Accessibility Design</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Version Control & Collaboration</td>
-                <td>Git, GitHub, Agile Workflow, Jira</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Digital Marketing & SEO</td>
-                <td>Google Analytics, SEO Best Practices, Social Media Management</td>
-                <td>Intermediate</td>
-            </tr>
-        </table>
+    <!-- Restaurant Menu Categories -->
+    <div class="menu-category">
+        <h2>Appetizers / Contact Details</h2>
+        <div class="menu-item"><span>Phone:</span> 0123 456 789</div>
+        <div class="menu-item"><span>Email:</span> reservations@samplebistro.com</div>
+        <div class="menu-item"><span>Location:</span> 12 Riverside Street, Manchester, UK</div>
+        <div class="menu-item"><span>Opening Hours:</span> Mon–Sun: 11am – 10pm</div>
     </div>
 
-    <!-- Work Experience Section -->
-    <div class="section-block">
-        <h2 class="section-title">Work Experience</h2>
-        <p>Past roles that showcase my practical experience and project delivery in real-world business contexts.</p>
-
-        <table class="experience-table">
-            <tr>
-                <th>Role</th>
-                <th>Company / Organization</th>
-                <th>Period</th>
-                <th>Key Responsibilities</th>
-            </tr>
-            <tr>
-                <td>Junior Web Developer</td>
-                <td>Freelance Projects</td>
-                <td>2024–2025</td>
-                <td>
-                    • Designed responsive websites using HTML, CSS, and JavaScript.<br>
-                    • Implemented UI improvements for client projects.<br>
-                    • Collaborated with designers and project managers to meet deadlines.
-                </td>
-            </tr>
-            <tr>
-                <td>IT Support Technician</td>
-                <td>Northpoint Solutions</td>
-                <td>2023–2024</td>
-                <td>
-                    • Resolved hardware and software issues for corporate clients.<br>
-                    • Installed, configured, and maintained IT systems.<br>
-                    • Assisted in system upgrades and troubleshooting network problems.
-                </td>
-            </tr>
-            <tr>
-                <td>Project Assistant</td>
-                <td>CityTech Innovations</td>
-                <td>2022–2023</td>
-                <td>
-                    • Supported web development projects from planning to deployment.<br>
-                    • Created documentation and user guides.<br>
-                    • Conducted testing and quality assurance for client applications.
-                </td>
-            </tr>
-        </table>
+    <div class="menu-category">
+        <h2>Main Courses / Social Media</h2>
+        <div class="menu-item"><span>Facebook:</span> <a href="#">facebook.com/samplebistro</a></div>
+        <div class="menu-item"><span>Instagram:</span> <a href="#">@samplebistro</a></div>
+        <div class="menu-item"><span>Twitter / X:</span> <a href="#">@samplebistro_official</a></div>
     </div>
 
-    <!-- Soft Skills Section -->
-    <div class="section-block">
-        <h2 class="section-title">Professional & Soft Skills</h2>
-        <p>Alongside technical skills, these personal competencies help me thrive in team environments and client-facing roles.</p>
+    <div class="menu-category">
+        <h2>Desserts / Booking & Feedback Form</h2>
+        <form id="bookingForm" class="form-box">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
 
-        <table class="experience-table">
-            <tr>
-                <th>Skill</th>
-                <th>Description</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Communication</td>
-                <td>Clear, concise, and effective communication in both written and verbal formats.</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Teamwork</td>
-                <td>Collaborates effectively within teams to achieve project goals and deadlines.</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Problem-Solving</td>
-                <td>Strong analytical skills to resolve complex technical and operational issues.</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Time Management</td>
-                <td>Organizes tasks efficiently to meet project deadlines without compromising quality.</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Adaptability</td>
-                <td>Quickly adjusts to changing technologies, project requirements, and client needs.</td>
-                <td>Advanced</td>
-            </tr>
-        </table>
-    </div>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" required>
 
-    <!-- Certifications Section -->
-    <div class="section-block">
-        <h2 class="section-title">Certifications & Achievements</h2>
-        <p>Formal recognition of my learning, skill development, and professional growth.</p>
+            <label for="type">Request Type</label>
+            <select id="type">
+                <option>Booking Request</option>
+                <option>Feedback</option>
+                <option>General Enquiry</option>
+            </select>
 
-        <table class="experience-table">
-            <tr>
-                <th>Certification</th>
-                <th>Issuing Authority</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>Diploma in Web Development</td>
-                <td>Manchester Institute of Technology</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Certificate in IT Support</td>
-                <td>CityTech Innovations</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Google Digital Marketing Certificate</td>
-                <td>Google</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Advanced JavaScript & Web Apps</td>
-                <td>Coursera</td>
-                <td>2024</td>
-            </tr>
-        </table>
-    </div>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
 
-    <!-- Skills Grid -->
-    <div class="section-block">
-        <h2 class="section-title">Skills Overview</h2>
-        <p>A quick visual overview of my top skills and capabilities.</p>
+            <button type="submit">Generate Email</button>
+        </form>
 
-        <ul class="skills-grid">
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>UI/UX Design</li>
-            <li>Git & GitHub</li>
-            <li>SEO & Digital Marketing</li>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-            <li>Time Management</li>
-        </ul>
+        <div class="output-box" id="generatedEmail">Your generated email will appear here.</div>
     </div>
 
 </section>
 
 <footer>
-    <p>©
+    © 2025 Sample Riverside Bistro
+</footer>
+
+</body>
+</html>
