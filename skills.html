@@ -1,249 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Menu - Harris Mahmood</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Georgia", serif;
-            background: white;
-            color: #222;
-        }
-
-        header {
-            background: #b30000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 32px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: bold;
-            border-bottom: 5px solid #7a0000;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .menu-container {
-            width: 80%;
-            margin: 40px auto;
-        }
-
-        .menu-section {
-            background: #ffe5e5;
-            border-left: 8px solid #b30000;
-            padding: 25px;
-            margin-bottom: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .menu-title {
-            font-size: 30px;
-            color: #b30000;
-            margin-bottom: 10px;
-            border-bottom: 3px solid #b30000;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .menu-section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 18px;
-        }
-
-        th {
-            background: #b30000;
-            color: white;
-            padding: 12px;
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        td {
-            border-bottom: 1px solid #ffb3b3;
-            padding: 12px;
-        }
-
-        tr:hover {
-            background: #ffd6d6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #b30000;
-            color: white;
-            margin-top: 40px;
-            letter-spacing: 1px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robertos — Services</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    Skills Menu – Harris Mahmood
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="skills.html">Skills</a>
-        <a href="business.html">Business</a>
-        <a href="problem.html">Problem Solving</a>
+  <header class="lux-header">
+    <h1 class="lux-logo">Robertos</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Reservations</a>
+      <a href="skills.html" class="active">Services</a>
+      <a href="showcase.html">Signature</a>
+      <a href="problem-solving.html">Solutions</a>
     </nav>
-</header>
+  </header>
 
-<div class="menu-container">
+  <main class="container">
+    <section class="menu-section">
+      <h2 class="menu-title">Our Services</h2>
+      <p class="lead">Robertos provides restaurant-grade services for hospitality and local businesses. Choose a service or enquire for bespoke solutions.</p>
 
-    <!-- Certificates Section -->
-    <div class="menu-section">
-        <h2 class="menu-title">📜 Certificates & Diplomas</h2>
-        <p>A curated selection of professional certifications—crafted with passion, dedication, and attention to detail.</p>
+      <div class="grid">
+        <div class="menu-item">
+          <h3 class="menu-title">Reservation System</h3>
+          <p class="small">Automated booking forms, email notifications, availability management. Perfect for small to medium restaurants.</p>
+          <p class="price">From £150 (setup)</p>
+        </div>
 
-        <table>
-            <tr>
-                <th>Qualification</th>
-                <th>Provider</th>
-                <th>Year</th>
-            </tr>
-            <tr>
-                <td>Diploma in Web Development</td>
-                <td>Manchester IT Academy</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>IT Support & Networking Certificate</td>
-                <td>Northpoint Technical Institute</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Google Digital Marketing Certificate</td>
-                <td>Google Digital Garage</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Responsive Web Design Training</td>
-                <td>W3C Education</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Cybersecurity Essentials</td>
-                <td>Cisco Networking Academy</td>
-                <td>2024</td>
-            </tr>
-        </table>
-    </div>
+        <div class="menu-item">
+          <h3 class="menu-title">Interactive Menu</h3>
+          <p class="small">Digital menu display with images, pricing, and allergy info — optimised for mobile.</p>
+          <p class="price">From £120 (per menu)</p>
+        </div>
 
-    <!-- Technical Skills -->
-    <div class="menu-section">
-        <h2 class="menu-title">🔧 Technical Skills</h2>
-        <p>Crafted with precision, these technical skills form the core ingredients of my digital expertise.</p>
+        <div class="menu-item">
+          <h3 class="menu-title">Website & Branding</h3>
+          <p class="small">Premium site design, hosting setup and SEO-conscious content.</p>
+          <p class="price">From £700</p>
+        </div>
 
-        <table>
-            <tr>
-                <th>Category</th>
-                <th>Description</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Front-End Development</td>
-                <td>HTML5, CSS3, JavaScript, animations, layouts</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>UI / UX Design</td>
-                <td>User flow, accessibility, wireframes, contrast application</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>IT Support</td>
-                <td>Diagnostics, system setup, troubleshooting, repairs</td>
-                <td>Advanced</td>
-            </tr>
-            <tr>
-                <td>Version Control</td>
-                <td>Git, GitHub workflow, repositories</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>Back-End Basics</td>
-                <td>PHP, SQL, file management</td>
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Digital Marketing</td>
-                <td>SEO, analytics, content creation, branding</td>
-                <td>Intermediate</td>
-            </tr>
-        </table>
-    </div>
+        <div class="menu-item">
+          <h3 class="menu-title">Operational Tools</h3>
+          <p class="small">Form automation, order capture, staff schedule tools and simple dashboards.</p>
+          <p class="price">From £250</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Work experience -->
-    <div class="menu-section">
-        <h2 class="menu-title">💼 Work Experience</h2>
-        <p>A fine selection of professional roles, each adding flavour to my journey.</p>
-
-        <table>
-            <tr>
-                <th>Role</th>
-                <th>Organisation</th>
-                <th>Years</th>
-            </tr>
-            <tr>
-                <td>Junior Web Developer</td>
-                <td>Freelance / Client Projects</td>
-                <td>2024–2025</td>
-            </tr>
-            <tr>
-                <td>IT Support Technician</td>
-                <td>Northpoint Solutions</td>
-                <td>2023–2024</td>
-            </tr>
-            <tr>
-                <td>Project Assistant</td>
-                <td>CityTech Innovations</td>
-                <td>2022–2023</td>
-            </tr>
-            <tr>
-                <td>Digital Marketing Assistant</td>
-                <td>Metro Media Group</td>
-                <td>2021–2022</td>
-            </tr>
-            <tr>
-                <td>Customer Experience Advisor</td>
-                <td>RetailTech UK</td>
-                <td>2020–2021</td>
-            </tr>
-        </table>
-    </div>
-
-</div>
-
-<footer>
-    © 2025 Harris Mahmood — Professional Portfolio Menu
-</footer>
-
+  <footer class="lux-footer">
+    © 2025 Robertos — Services
+  </footer>
 </body>
 </html>
