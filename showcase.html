@@ -1,136 +1,202 @@
-/* ================================
-   SKILLS PAGE — PROFESSIONAL RED THEME
-   ================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Harris Mahmood</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* Container */
-.skills-container {
-    max-width: 980px;
-    margin: 50px auto;
-    padding: 25px;
-    animation: fadeIn 0.5s ease-in-out;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
+<header>
+    <h1 class="logo">Harris Mahmood - Professional Skills</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="problem.html">Problem Solving</a>
+        <a href="contact.html">Contact</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="business.html">Business Showcase</a>
+    </nav>
+</header>
 
-/* ================================
-   SECTION BLOCKS
-   ================================ */
-.section-block {
-    background: #fff4f4; 
-    padding: 30px;
-    margin-bottom: 35px;
-    border-radius: 14px;
-    border-left: 6px solid #d11b1b;
-    box-shadow: 0 6px 18px rgba(190, 0, 0, 0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+<section class="skills-container">
 
-.section-block:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(190, 0, 0, 0.22);
-}
+    <!-- Technical Skills Section -->
+    <div class="section-block">
+        <h2 class="section-title">Technical Skills & Expertise</h2>
+        <p>My technical competencies allow me to create, develop, and maintain high-quality web solutions. I focus on efficiency, responsive design, and usability.</p>
 
-/* Section Titles */
-.section-title {
-    color: #b11010;
-    margin-bottom: 18px;
-    font-size: 1.85rem;
-    font-weight: 800;
-    border-bottom: 2px solid #e53939;
-    padding-bottom: 6px;
-    letter-spacing: 0.5px;
-}
+        <table class="experience-table">
+            <tr>
+                <th>Category</th>
+                <th>Details & Tools</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>HTML5, CSS3, JavaScript, Responsive Web Design, Bootstrap, Tailwind CSS</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Programming Languages</td>
+                <td>Python, JavaScript, SQL</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>UI/UX & Design</td>
+                <td>Figma, Canva, Wireframing, Prototyping, Accessibility Design</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Version Control & Collaboration</td>
+                <td>Git, GitHub, Agile Workflow, Jira</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Digital Marketing & SEO</td>
+                <td>Google Analytics, SEO Best Practices, Social Media Management</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </div>
 
-/* ================================
-   LIST STYLES
-   ================================ */
-.styled-list li {
-    margin-bottom: 12px;
-    line-height: 1.75;
-    font-size: 1.12rem;
-    padding: 6px 0 6px 12px;
-    border-left: 4px solid #ff4343;
-    background: #fff;
-    border-radius: 6px;
-    transition: 0.2s;
-}
+    <!-- Work Experience Section -->
+    <div class="section-block">
+        <h2 class="section-title">Work Experience</h2>
+        <p>Past roles that showcase my practical experience and project delivery in real-world business contexts.</p>
 
-.styled-list li:hover {
-    background: #ffeaea;
-    border-left-color: #d11b1b;
-}
+        <table class="experience-table">
+            <tr>
+                <th>Role</th>
+                <th>Company / Organization</th>
+                <th>Period</th>
+                <th>Key Responsibilities</th>
+            </tr>
+            <tr>
+                <td>Junior Web Developer</td>
+                <td>Freelance Projects</td>
+                <td>2024–2025</td>
+                <td>
+                    • Designed responsive websites using HTML, CSS, and JavaScript.<br>
+                    • Implemented UI improvements for client projects.<br>
+                    • Collaborated with designers and project managers to meet deadlines.
+                </td>
+            </tr>
+            <tr>
+                <td>IT Support Technician</td>
+                <td>Northpoint Solutions</td>
+                <td>2023–2024</td>
+                <td>
+                    • Resolved hardware and software issues for corporate clients.<br>
+                    • Installed, configured, and maintained IT systems.<br>
+                    • Assisted in system upgrades and troubleshooting network problems.
+                </td>
+            </tr>
+            <tr>
+                <td>Project Assistant</td>
+                <td>CityTech Innovations</td>
+                <td>2022–2023</td>
+                <td>
+                    • Supported web development projects from planning to deployment.<br>
+                    • Created documentation and user guides.<br>
+                    • Conducted testing and quality assurance for client applications.
+                </td>
+            </tr>
+        </table>
+    </div>
 
-/* ================================
-   SKILLS GRID
-   ================================ */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 18px;
-    margin-top: 10px;
-}
+    <!-- Soft Skills Section -->
+    <div class="section-block">
+        <h2 class="section-title">Professional & Soft Skills</h2>
+        <p>Alongside technical skills, these personal competencies help me thrive in team environments and client-facing roles.</p>
 
-.skills-grid li {
-    background: #ffffff;
-    padding: 18px 20px;
-    border-radius: 12px;
-    border: 1px solid #ffc2c2;
-    box-shadow: 0 2px 8px rgba(190, 0, 0, 0.12);
-    transition: 0.25s ease;
-    font-size: 1.08rem;
-    font-weight: 500;
-}
+        <table class="experience-table">
+            <tr>
+                <th>Skill</th>
+                <th>Description</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Communication</td>
+                <td>Clear, concise, and effective communication in both written and verbal formats.</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Teamwork</td>
+                <td>Collaborates effectively within teams to achieve project goals and deadlines.</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Problem-Solving</td>
+                <td>Strong analytical skills to resolve complex technical and operational issues.</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Time Management</td>
+                <td>Organizes tasks efficiently to meet project deadlines without compromising quality.</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Adaptability</td>
+                <td>Quickly adjusts to changing technologies, project requirements, and client needs.</td>
+                <td>Advanced</td>
+            </tr>
+        </table>
+    </div>
 
-.skills-grid li:hover {
-    background: #ffe5e5;
-    border-color: #e01c1c;
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(190, 0, 0, 0.22);
-}
+    <!-- Certifications Section -->
+    <div class="section-block">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <p>Formal recognition of my learning, skill development, and professional growth.</p>
 
-/* ================================
-   EXPERIENCE TABLE
-   ================================ */
-.experience-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-top: 20px;
-    box-shadow: 0 4px 14px rgba(190, 0, 0, 0.18);
-}
+        <table class="experience-table">
+            <tr>
+                <th>Certification</th>
+                <th>Issuing Authority</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Diploma in Web Development</td>
+                <td>Manchester Institute of Technology</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Certificate in IT Support</td>
+                <td>CityTech Innovations</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Google Digital Marketing Certificate</td>
+                <td>Google</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Advanced JavaScript & Web Apps</td>
+                <td>Coursera</td>
+                <td>2024</td>
+            </tr>
+        </table>
+    </div>
 
-.experience-table th {
-    background: #c71616;
-    color: white;
-    padding: 15px;
-    font-size: 1.1rem;
-    text-align: left;
-}
+    <!-- Skills Grid -->
+    <div class="section-block">
+        <h2 class="section-title">Skills Overview</h2>
+        <p>A quick visual overview of my top skills and capabilities.</p>
 
-.experience-table td {
-    padding: 15px;
-    border-bottom: 1px solid #ffd1d1;
-    font-size: 1.07rem;
-}
+        <ul class="skills-grid">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>UI/UX Design</li>
+            <li>Git & GitHub</li>
+            <li>SEO & Digital Marketing</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Time Management</li>
+        </ul>
+    </div>
 
-.experience-table tr:hover td {
-    background: #ffe1e1;
-}
+</section>
 
-/* ================================
-   NAVIGATION HIGHLIGHT
-   ================================ */
-nav a.active {
-    text-decoration: underline;
-    font-weight: 700;
-    color: #c71616 !important;
-}
-
-/* ================================
-   ANIMATION
-   ================================ */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+<footer>
+    <p>©
