@@ -1,240 +1,67 @@
-<!-- problem-solving.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Restaurant Digital Transformation — Case Study</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Problem-Solving Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page-wrapper">
-    <header class="site-header">
-      <div class="container">
-        <h1>Restaurant Digital Transformation Case Study</h1>
-      </div>
-    </header>
 
-    <main class="container">
-      <article class="section">
-        <h2>Business Context & Goals</h2>
-        <div class="textbox">
-          <p>The restaurant relied on manual phone bookings …</p>
-        </div>
-        <div class="textbox">
-          <p>Objectives include: <strong>1)</strong> faster booking …</p>
-        </div>
-      </article>
+<header>
+    <h1 class="logo">Restaurant Digital Transformation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="skills.html">Skills</a>
+        <a href="business.html">Business Showcase</a>
+        <a href="problem.html">Problem-Solving</a>
+    </nav>
+</header>
 
-      <article class="section">
-        <h2>Implemented Features</h2>
-        <div class="textbox">
-          <ul>
-            <li>Social media integration</li>
-            <li>Clear contact info</li>
-            <li>Interactive booking form</li>
-            <li>Accessible design</li>
-            <li>Minimalist interface</li>
-          </ul>
-        </div>
-      </article>
+<section class="content">
 
-      <article class="section">
-        <h2>Problem-Solving Approach</h2>
-        <div class="textbox">
-          <p><strong>User Journey:</strong> The page …</p>
-        </div>
-        <div class="textbox">
-          <p><strong>Form Design:</strong> Fields include name, …</p>
-        </div>
-        <div class="textbox">
-          <p><strong>Visual Design:</strong> Clean layout …</p>
-        </div>
-      </article>
+    <h2>Business Context</h2>
+    <p>
+        This page showcases how a restaurant can use a digital solution to improve communication, booking efficiency, 
+        and social media engagement. It demonstrates my web development skills applied to a real-world business need.
+    </p>
 
-      <article class="section book-form-section">
-        <h2>Booking / Feedback Form</h2>
-        <form id="bookingForm">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" required />
+    <h3>Social Media Links</h3>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter / X</a></li>
+    </ul>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+    <h3>Restaurant Contact Details</h3>
+    <p><strong>Phone:</strong> 0123 456 789</p>
+    <p><strong>Email:</strong> reservations@samplebistro.com</p>
+    <p><strong>Location:</strong> 12 Riverside Street, Manchester</p>
 
-          <label for="date">Preferred date/time (optional)</label>
-          <input id="date" name="date" type="datetime-local" />
+    <h3>Booking / Feedback Form</h3>
 
-          <label for="people">Number of people (optional)</label>
-          <input id="people" name="people" type="number" min="1" />
+    <form id="bookingForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
 
-          <label for="message">Message / Special requests</label>
-          <textarea id="message" name="message" rows="4"></textarea>
+        <label>Email:</label>
+        <input type="email" id="email" required>
 
-          <button type="submit">Send Booking / Feedback</button>
-        </form>
-        <p class="textbox info-text"><em>How it works:</em> The form builds a mailto URL …</p>
-      </article>
+        <label>Booking / Feedback Message:</label>
+        <textarea id="message" required></textarea>
 
-      <article class="section contact-section">
-        <h2>Contact & Social Links</h2>
-        <p class="social-links">
-          <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-          <a href="https://twitter.com" target="_blank">Twitter / X</a>
-        </p>
-        <p><strong>Email:</strong> <a href="mailto:restaurant@example.com">restaurant@example.com</a><br>
-        <strong>Phone:</strong> 0123 456 789</p>
-      </article>
-    </main>
+        <button type="submit">Generate Email</button>
+    </form>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>© 2025 Restaurant Case Study. All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
+    <p id="generatedEmail" class="output"></p>
 
-  <script src="script.js"></script>
+</section>
+
+<footer>
+    <p>© 2025 Harris Mahmood</p>
+</footer>
+
 </body>
 </html>
-3. CSS (style.css)
-Here’s a more professional CSS file that reflects that OpenTable-style clean layout + colour scheme:
-
-css
-Copy code
-/* Reset / base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333333;
-  line-height: 1.6;
-}
-
-a {
-  color: #c82333; /* Accent red */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Wrapper */
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px 0;
-}
-
-/* Header */
-.site-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #dddddd;
-  padding: 20px 0;
-}
-
-.site-header h1 {
-  font-size: 2rem;
-  color: #222222;
-  text-align: center;
-}
-
-/* Sections */
-.section {
-  background-color: #ffffff;
-  margin-bottom: 30px;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-  color: #222222;
-}
-
-/* Textbox style for emphasized text */
-.textbox {
-  background-color: #e9ecef;
-  border-left: 4px solid #c82333;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-radius: 4px;
-}
-
-/* Form styling */
-.book-form-section form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-label {
-  font-weight: 600;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #c82333;
-  color: #ffffff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #a71d2a;
-}
-
-/* Info text under form */
-.info-text {
-  margin-top: 12px;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #555555;
-}
-
-/* Social links section */
-.contact-section .social-links a {
-  margin-right: 16px;
-  font-weight: 600;
-}
-
-/* Footer */
-.site-footer {
-  margin-top: auto;
-  background-color: #ffffff;
-  border-top: 1px solid #dddddd;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.site-footer p {
-  color: #777777;
-  font-size: 0.9rem;
-}
