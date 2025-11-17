@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Digital Transformation | Menu Style</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body { font-family: "Segoe UI", Arial, sans-serif; background: #fff8f8; }
-        header { background: #d11b1b; color: white; padding: 20px 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; font-weight: 600; text-decoration: none; }
-        nav a.active { text-decoration: underline; }
-
-        .menu-section { max-width: 900px; margin: 40px auto; padding: 20px; }
-        .menu-category { background: #fff4f4; border-left: 6px solid #d11b1b; padding: 20px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 6px 18px rgba(190,0,0,0.15);}
-        .menu-category h2 { color: #b11010; border-bottom: 2px solid #e53939; padding-bottom: 6px; margin-bottom: 15px; }
-
-        .menu-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ffcaca; }
-        .menu-item:last-child { border-bottom: none; }
-        .menu-item span { font-weight: 500; }
-
-        /* Form Styling */
-        .form-box { margin-top: 20px; padding: 15px; background: #ffeaea; border-radius: 8px; border: 1px solid #d11b1b; }
-        .form-box label { display: block; margin: 10px 0 5px; font-weight: 600; }
-        .form-box input, .form-box select, .form-box textarea { width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #cc1b1b; }
-        .form-box button { background: #d11b1b; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
-        .form-box button:hover { background: #b11010; }
-
-        .output-box { background: #fff4f4; border: 1px solid #d11b1b; padding: 15px; margin-top: 15px; border-radius: 6px; white-space: pre-wrap; }
-
-        footer { text-align: center; margin-top: 40px; padding: 15px 0; background: #d11b1b; color: white; }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const form = document.getElementById("bookingForm");
-            const output = document.getElementById("generatedEmail");
-
-            form.addEventListener("submit", (e) => {
-                e.preventDefault();
-                const name = document.getElementById("name").value;
-                const email = document.getElementById("email").value;
-                const phone = document.getElementById("phone").value;
-                const type = document.getElementById("type").value;
-                const message = document.getElementById("message").value;
-
-                output.textContent = `To: reservations@samplebistro.com\nSubject: ${type} from ${name}\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nRequest Type: ${type}\nMessage:\n${message}`;
-            });
-        });
-    </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robertos — Menu</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-    <h1>Sample Riverside Bistro</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="skills.html">Skills</a>
-        <a href="business.html">Business Showcase</a>
-        <a href="problem.html" class="active">Menu / Bookings</a>
+  <header class="lux-header">
+    <h1 class="lux-logo">Robertos</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="contact.html">Reservations</a>
+      <a href="skills.html">Services</a>
+      <a href="showcase.html">Signature</a>
+      <a href="problem-solving.html">Solutions</a>
     </nav>
-</header>
+  </header>
 
-<section class="menu-section">
+  <main class="container">
+    <section class="menu-section">
+      <h2 class="menu-title">Tasting Menu — Classics</h2>
+      <p class="lead">A curated selection of signature starters, mains, and desserts — seasonal and locally sourced.</p>
 
-    <!-- Restaurant Menu Categories -->
-    <div class="menu-category">
-        <h2>Appetizers / Contact Details</h2>
-        <div class="menu-item"><span>Phone:</span> 0123 456 789</div>
-        <div class="menu-item"><span>Email:</span> reservations@samplebistro.com</div>
-        <div class="menu-item"><span>Location:</span> 12 Riverside Street, Manchester, UK</div>
-        <div class="menu-item"><span>Opening Hours:</span> Mon–Sun: 11am – 10pm</div>
-    </div>
+      <table class="menu-table">
+        <tr><th>Dish</th><th>Description</th><th class="price">Price</th></tr>
 
-    <div class="menu-category">
-        <h2>Main Courses / Social Media</h2>
-        <div class="menu-item"><span>Facebook:</span> <a href="#">facebook.com/samplebistro</a></div>
-        <div class="menu-item"><span>Instagram:</span> <a href="#">@samplebistro</a></div>
-        <div class="menu-item"><span>Twitter / X:</span> <a href="#">@samplebistro_official</a></div>
-    </div>
+        <!-- Starters -->
+        <tr>
+          <td class="menu-item"><strong>Truffle & Wild Mushroom Arancini</strong></td>
+          <td>Creamy risotto balls, saffron aioli, shaved parmesan.</td>
+          <td class="price">£9.50</td>
+        </tr>
 
-    <div class="menu-category">
-        <h2>Desserts / Booking & Feedback Form</h2>
-        <form id="bookingForm" class="form-box">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required>
-            
-            <label for="email">Email Address</label>
-            <input type="email" id="email" required>
+        <tr>
+          <td class="menu-item"><strong>Seared Scallops</strong></td>
+          <td>Buttered fennel, lemon gel, and crispy pancetta.</td>
+          <td class="price">£12.00</td>
+        </tr>
 
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" required>
+        <!-- Mains -->
+        <tr>
+          <td class="menu-item"><strong>Slow-Braised Beef Short Rib</strong></td>
+          <td>Red wine reduction, pommes purée, roasted heritage carrots.</td>
+          <td class="price">£22.50</td>
+        </tr>
 
-            <label for="type">Request Type</label>
-            <select id="type">
-                <option>Booking Request</option>
-                <option>Feedback</option>
-                <option>General Enquiry</option>
-            </select>
+        <tr>
+          <td class="menu-item"><strong>Pan-Roasted Sea Bass</strong></td>
+          <td>Confit tomatoes, wilted spinach, caper beurre blanc.</td>
+          <td class="price">£20.00</td>
+        </tr>
 
-            <label for="message">Message</label>
-            <textarea id="message" required></textarea>
+        <tr>
+          <td class="menu-item"><strong>Wild Mushroom & Ricotta Ravioli (V)</strong></td>
+          <td>Burnt butter sage sauce, toasted pine nuts.</td>
+          <td class="price">£17.50</td>
+        </tr>
 
-            <button type="submit">Generate Email</button>
-        </form>
+        <!-- Desserts -->
+        <tr>
+          <td class="menu-item"><strong>Chocolate Fondant</strong></td>
+          <td>Molten chocolate centre, vanilla bean ice cream.</td>
+          <td class="price">£8.50</td>
+        </tr>
 
-        <div class="output-box" id="generatedEmail">Your generated email will appear here.</div>
-    </div>
+        <tr>
+          <td class="menu-item"><strong>Cheese Plate</strong></td>
+          <td>Selection of three British cheeses, chutney, crackers.</td>
+          <td class="price">£10.00</td>
+        </tr>
 
-</section>
+      </table>
+    </section>
 
-<footer>
-    © 2025 Sample Riverside Bistro
-</footer>
+    <section class="menu-section">
+      <h2 class="menu-title">Wine Pairings & Beverages</h2>
+      <table class="menu-table">
+        <tr><th>Beverage</th><th>Details</th><th class="price">Price</th></tr>
+        <tr><td><strong>House Red — Montevino</strong></td><td>Medium-bodied, berry notes.</td><td class="price">£6.50 / glass</td></tr>
+        <tr><td><strong>Champagne — Finesse</strong></td><td>Brut, crisp, citrus.</td><td class="price">£12.00 / glass</td></tr>
+        <tr><td><strong>Artisan Espresso</strong></td><td>Single origin, served with petit fours.</td><td class="price">£3.50</td></tr>
+      </table>
+    </section>
+  </main>
 
+  <footer class="lux-footer">
+    © 2025 Robertos — Menu & Reservations
+  </footer>
 </body>
 </html>
