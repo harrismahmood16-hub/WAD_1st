@@ -1,1 +1,105 @@
+<!-- index.html -->
+<textarea id="message" name="message" rows="4"></textarea><br /><br />
 
+
+<button type="submit">Send booking / feedback (opens your email)</button>
+</form>
+
+
+<p class="note">How it works: the form builds a mailto: URL and opens the default mail client with a pre-filled message. This approach avoids server-side components while delivering a real-world booking flow for the restaurant.</p>
+</section>
+</main>
+</body>
+</html>
+
+
+<!-- styles.css -->
+/* Simple, clean styles for the five-page site. Replace or extend as needed. */
+:root{--max:1000px}
+*{box-sizing:border-box}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;color:#111}
+.container{max-width:var(--max);margin:24px auto;padding:0 16px}
+.nav{display:flex;gap:12px;padding:12px 16px;background:#f7f7f7}
+.nav a{text-decoration:none;color:#111;font-weight:600}
+.hero{background:#fff;padding:20px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.lead{font-size:1.05rem;margin-bottom:12px}
+h1,h2,h3{margin:12px 0}
+ul{margin:8px 0 16px 1.2em}
+.experience{width:100%;border-collapse:collapse}
+.experience th,.experience td{border:1px solid #ddd;padding:8px;text-align:left}
+.project{margin-bottom:20px}
+label{font-weight:600}
+input,textarea,select,button{font:inherit;padding:8px;border:1px solid #ccc;border-radius:6px}
+button{cursor:pointer;background:#111;color:#fff;border:none}
+.note{font-size:.9rem;color:#444;margin-top:12px}
+@media(max-width:600px){.nav{flex-wrap:wrap}}
+
+
+
+
+<!-- PLAN.md -->
+
+
+# Project Plan — Harris Personal Website (Code Format)
+
+
+```markdown
+# Project Plan — Harris Personal Website
+
+
+## 1. Project Overview
+- **Project:** Five-page personal website for Harris
+- **Technologies:** HTML, CSS, JavaScript
+- **Purpose:** Demonstrate web development skills and deliver a restaurant digital transformation case study solution
+
+
+## 2. Pages (Files)
+- `index.html` — Home / Professional summary
+- `contact.html` — Contact details and social links
+- `skills.html` — Skills, certificates, diplomas, work experience
+- `showcase.html` — Three projects (including Problem-Solving project and design concept explanation)
+- `problem-solving.html` — Restaurant case study: context, social links, contact, interactive form that generates mailto:
+- `styles.css` — Shared styles
+
+
+## 3. File Structure
+```
+/ personal-website-harris
+├─ index.html
+├─ contact.html
+├─ skills.html
+├─ showcase.html
+├─ problem-solving.html
+└─ styles.css
+```
+
+
+## 4. Problem-Solving Form (spec)
+- Inputs: `name` (required), `email` (required), `date` (optional), `people` (optional), `message` (optional)
+- Client-side validation: ensure `name` and `email` present and valid
+- Behaviour: on submit, build `mailto:restaurant@example.com?subject=...&body=...` and open user's mail client
+- No server / database
+
+
+## 5. Accessibility & Progressive Enhancement
+- Use semantic HTML (`header`, `main`, `nav`, `section`, `article`, `form`, `label`)
+- Provide accessible labels and required attributes
+- Ensure forms work with and without JavaScript (mailto fallback or visible instructions)
+
+
+## 6. Assessment Compliance Checklist
+- Professional summary ✔
+- Contact page with email & social links ✔
+- Skills page with certificates & experience ✔
+- Three project showcases (role/problem/outcome) ✔
+- Problem-Solving page implementing business goals, social links, contact details, interactive form that generates email ✔
+
+
+## 7. Next Steps / Improvements (Optional)
+- Replace placeholder emails and social links with real values
+- Add images/icons (SVGs) and a logo
+- Improve visual design (font, color palette, spacing) and accessibility audit
+- Export project as ZIP
+- Add responsive mobile menu and minor JS animations
+```
+```
