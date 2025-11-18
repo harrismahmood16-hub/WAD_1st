@@ -59,3 +59,73 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reservations — Robertos</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="lux-header">
+<h1 class="lux-logo">Robertos</h1>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html" class="active">Reservations</a>
+<a href="skills.html">Services</a>
+<a href="showcase.html">Signature</a>
+<a href="problem-solving.html">Solutions</a>
+</nav>
+</header>
+
+<main class="container">
+<section class="section">
+<h2 class="page-title">Reserve Your Table</h2>
+<p class="sub">We look forward to welcoming you. Please fill out the details below.</p>
+
+<div class="card" style="background: rgba(255,255,255,0.95); border-radius:12px;">
+  <form id="reservationForm">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Full Name" required>
+    
+    <label>Email</label>
+    <input type="email" name="email" placeholder="you@example.com" required>
+    
+    <label>Phone</label>
+    <input type="tel" name="phone" placeholder="+44 7000 000000" required>
+    
+    <label>Date</label>
+    <input type="date" name="date" required>
+    
+    <label>Time</label>
+    <input type="time" name="time" required>
+    
+    <label>Guests</label>
+    <input type="number" name="guests" placeholder="2" min="1" required>
+    
+    <label>Notes</label>
+    <textarea name="notes" placeholder="Any special requests"></textarea>
+    
+    <button type="submit" class="btn">Submit Reservation</button>
+  </form>
+</div>
+
+<p style="margin-top:20px;">Or contact us directly:</p>
+<p>Email: <a href="mailto:reservations@robertos.com">reservations@robertos.com</a></p>
+<p>Phone: 0114 000 0000</p>
+<p>Address: 10 Chapel Lane, Sheffield, South Yorkshire</p>
+
+</section>
+</main>
+
+<footer class="lux-footer">
+© 2025 Robertos — Reservations
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
