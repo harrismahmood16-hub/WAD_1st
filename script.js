@@ -1,10 +1,11 @@
-// script.js — Reservation / reservation email generator
-document.addEventListener('DOMContentLoaded', ()=> {
+// script.js — reservation mailto generator + preview (Robertos)
+document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('reservationForm');
-  if(!form) return;
+  if (!form) return;
 
-  form.addEventListener('submit', (e)=>{
+  form.addEventListener('submit', e => {
     e.preventDefault();
+
     const name = form.elements['name'].value.trim();
     const email = form.elements['email'].value.trim();
     const phone = form.elements['phone'].value.trim();
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const guests = form.elements['guests'].value;
     const notes = form.elements['notes'].value.trim();
 
-    const subject = encodeURIComponent(`Reservation Request — Robertos — ${name}`);
+    const subject = encodeURIComponent(`Reservation Request — Robertos — ${name || 'Guest'}`);
     const bodyLines = [
       `Name: ${name}`,
       `Email: ${email}`,
@@ -29,12 +30,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     // show preview
     const preview = document.getElementById('reservationPreview');
-    if(preview){
-      preview.textContent = `To: reservations@robertos.example.com\nSubject: Reservation Request — Robertos — ${name}\n\n${bodyLines.join('\n')}`;
+    if (preview) {
+      preview.textContent = `To: reservations@robertos.com\nSubject: Reservation Request — Robertos — ${name}\n\n${bodyLines.join('\n')}`;
     }
 
-    // open mailto
-    const mailto = `mailto:reservations@robertos.example.com?subject=${subject}&body=${body}`;
+    // open mailto (user sends from their email client)
+    const mailto = `mailto:reservations@robertos.com?subject=${subject}&body=${body}`;
     window.location.href = mailto;
   });
 });
+
