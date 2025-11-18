@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Harris — Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Robertos — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="lux-header">
-  <h1 class="lux-logo">Robertos</h1>
+<header class="header">
+  <div class="lux-logo">Robertos</div>
   <nav class="nav">
     <a href="index.html" class="active">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="skills.html">Skills</a>
-    <a href="showcase.html">Business Showcase</a>
-    <a href="problem-solving.html">Problem-Solving</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Reservations</a>
+    <a href="skills.html">Services</a>
+    <a href="showcase.html">Signature</a>
+    <a href="problem-solving.html">Solutions</a>
   </nav>
 </header>
 
-<section class="hero-image" style="
-  background-image: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1');
-">
-  <div class="hero-overlay">
-    <h1 class="hero-title">Harris — Web Developer & CTO (Aspiring)</h1>
-    <p class="hero-sub">
-      Specialising in digital systems for restaurants, hospitality & small business transformation.
-    </p>
+<!-- Hero: Italian luxury image (replace with your own if desired) -->
+<section class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2000&auto=format&fit=crop&s=6a9f3f6b5f9f2a7c9f6f6b3e');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-title">Robertos — Italian Fine Dining</div>
+    <div class="hero-sub">Seasonal Italian flavours, refined technique and modern hospitality.</div>
+    <div class="hero-cta"><a href="menu.html" class="btn">View the Menu</a></div>
   </div>
 </section>
 
 <main class="container">
+  <section class="card">
+    <h2>Welcome</h2>
+    <p class="small">Robertos offers a curated Italian dining experience with a modern touch. We focus on seasonal ingredients, precise technique and excellent service in an intimate setting.</p>
 
-  <section class="section card">
-    <h2>Professional Summary</h2>
-    <p>
-      I’m Harris — a practical, results-driven technologist specialising in web development,
-      digital transformation and small business systems.
-    </p>
+    <div class="grid">
+      <div>
+        <h3 style="font-family:'Playfair Display',serif;">Our Philosophy</h3>
+        <p class="small">We believe that well-sourced ingredients and careful technique create memorable dishes. Our menu changes seasonally to celebrate local produce.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Playfair Display',serif;">Digital Hospitality</h3>
+        <p class="small">In addition to dining, Robertos provides lightweight digital solutions for restaurants — reservation automation, interactive menus and simple operational tools.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="image-row">
-    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed6d" alt="Restaurant kitchen" />
-    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Fine dining interior" />
+  <section class="small-hero-row">
+    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1547592166-11d9b5b3c7b4?q=80&w=1200&auto=format&fit=crop&s=9b2c4f1c');">
+      <div class="overlay"></div>
+      <div class="text">Seasonal Ingredients</div>
+    </div>
+    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&s=jkl012');">
+      <div class="overlay"></div>
+      <div class="text">Chef-Led Tasting Menus</div>
+    </div>
+    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop&s=abc123');">
+      <div class="overlay"></div>
+      <div class="text">Intimate Dining Room</div>
+    </div>
   </section>
 
+  <section class="card">
+    <h2>Reservations</h2>
+    <p class="small">Book a table online or contact us for private dining. We kindly ask that you inform us of any dietary requirements in advance.</p>
+    <p class="center"><a class="btn" href="contact.html">Reserve a Table</a></p>
+  </section>
 </main>
 
-<footer class="lux-footer">
-  © 2025 Harris Portfolio
-</footer>
-
+<footer class="footer">© 2025 Robertos — Italian Fine Dining</footer>
 </body>
 </html>
