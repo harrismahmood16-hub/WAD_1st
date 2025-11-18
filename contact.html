@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reservations — Robertos</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Luxury Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,28 +26,103 @@
 
 <main class="container">
 
+  <!-- RESERVATION INTRO -->
   <section class="section">
     <h2 class="page-title">Book a Table</h2>
-    <p class="sub">We look forward to welcoming you.</p>
+    <p class="sub">Fine dining, tailored to your occasion.</p>
 
     <div class="card">
-      <p><strong>Email:</strong>  
-      <a href="mailto:reservations@robertos.com">reservations@robertos.com</a></p>
+      <p>Reserve your table and experience Robertos — where modern European cuisine meets Michelin-level craftsmanship.</p>
+      <p>For special events, birthdays or private dining, our team will ensure everything is prepared to perfection.</p>
+    </div>
+  </section>
 
-      <p><strong>Phone:</strong> 0114 000 0000</p>
 
-      <p><strong>Address:</strong>  
-      10 Chapel Lane, Sheffield, South Yorkshire</p>
+  <!-- CONTACT TABLE -->
+  <section class="section">
+    <h2 class="page-title">Reservation Contact</h2>
+    <p class="sub">Reach us anytime.</p>
 
-      <p>For parties of six or more, please email directly so we can prepare a private dining area.</p>
+    <table class="table">
+      <tr>
+        <th>Email</th>
+        <td><a href="mailto:reservations@robertos.com">reservations@robertos.com</a></td>
+      </tr>
+      <tr>
+        <th>Phone</th>
+        <td>0114 000 0000</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>10 Chapel Lane, Sheffield, South Yorkshire</td>
+      </tr>
+      <tr>
+        <th>Private Dining</th>
+        <td>Available for groups of 6+ — contact us for tailored arrangements.</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <!-- BOOKING FORM -->
+  <section class="section">
+    <h2 class="page-title">Online Reservation Form</h2>
+    <p class="sub">Your request will be confirmed within 12–24 hours.</p>
+
+    <div class="card">
+
+      <form id="reservationForm">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="text" name="phone" required>
+
+        <label>Date</label>
+        <input type="date" name="date" required>
+
+        <label>Time</label>
+        <input type="time" name="time" required>
+
+        <label>Guests</label>
+        <select name="guests">
+          <option value="1">1 Guest</option>
+          <option value="2">2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5 Guests</option>
+          <option value="6">6 Guests</option>
+          <option value="7+">7+ (Private Dining)</option>
+        </select>
+
+        <label>Notes / Requests</label>
+        <textarea name="notes" rows="5" placeholder="Allergies, celebrations, preferences…"></textarea>
+
+        <button type="submit" class="btn">Send Reservation</button>
+      </form>
+
+      <h3 style="margin-top:25px; font-family:'Playfair Display',serif;">Email Preview</h3>
+      <pre id="reservationPreview" style="
+          background: var(--soft-red);
+          padding: 20px;
+          border-radius: var(--radius);
+          border: 1px solid var(--line);
+          font-size: 15px;
+          white-space: pre-wrap;
+        "></pre>
+
     </div>
   </section>
 
 </main>
 
 <footer class="lux-footer">
-  © 2025 Robertos — Reservations
+  © 2025 Robertos — Luxury Reservations
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
