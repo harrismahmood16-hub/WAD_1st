@@ -1,87 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robertos — Reservations</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header class="header">
-  <div class="lux-logo">Robertos</div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html" class="active">Reservations</a>
-    <a href="skills.html">Services</a>
-    <a href="showcase.html">Signature</a>
-    <a href="problem-solving.html">Solutions</a>
-  </nav>
-</header>
+  <header class="lux-header">
+    <h1 class="lux-logo">Robertos Reservations</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" class="active">Reservations</a>
+      <a href="skills.html">Services</a>
+      <a href="showcase.html">Signature</a>
+      <a href="problem-solving.html">Solutions</a>
+    </nav>
+  </header>
 
-<section class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2000&auto=format&fit=crop&s=hero_res');height:360px">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-title">Reservations</div>
-    <div class="hero-sub">Book a table, enquire about private dining or request event catering. We will confirm within 24 hours.</div>
-  </div>
-</section>
+  <main class="container">
+    <section class="box">
+      <h2 class="page-title">Book a Table</h2>
+      <p>We look forward to welcoming you at Robertos. Please fill out the form below for your reservation:</p>
 
-<main class="container">
-  <section class="card">
-    <h2>Contact & Opening Hours</h2>
-    <p class="small">For private events, parties or special menus, please email us so we can tailor your experience.</p>
-    <table class="table">
-      <tr><th>Email</th><td><a href="mailto:reservations@robertos.com">reservations@robertos.com</a></td></tr>
-      <tr><th>Phone</th><td>0114 000 0000</td></tr>
-      <tr><th>Address</th><td>10 Chapel Lane, Sheffield, South Yorkshire</td></tr>
-      <tr><th>Opening</th><td>Tue–Sun: 17:30 — 22:30 (Closed Mon)</td></tr>
-    </table>
-  </section>
+      <form id="reservationForm">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
 
-  <section class="card">
-    <h2>Online Reservation</h2>
-    <form id="reservationForm">
-      <label for="name">Full name</label>
-      <input id="name" name="name" type="text" required placeholder="Your full name">
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required placeholder="you@example.com">
+        <label>Phone:</label>
+        <input type="tel" name="phone" required><br><br>
 
-      <label for="phone">Phone</label>
-      <input id="phone" name="phone" type="tel" required placeholder="+44 7...">
+        <label>Date:</label>
+        <input type="date" name="date" required><br><br>
 
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
-        <div>
-          <label for="date">Date</label>
-          <input id="date" name="date" type="date" required>
-        </div>
-        <div>
-          <label for="time">Time</label>
-          <input id="time" name="time" type="time" required>
-        </div>
-      </div>
+        <label>Time:</label>
+        <input type="time" name="time" required><br><br>
 
-      <label for="guests">Guests</label>
-      <select id="guests" name="guests">
-        <option>1</option><option>2</option><option>3</option><option>4</option>
-        <option>5</option><option>6</option><option>7+</option>
-      </select>
+        <label>Guests:</label>
+        <input type="number" name="guests" required min="1"><br><br>
 
-      <label for="notes">Notes (dietary requirements, celebration)</label>
-      <textarea id="notes" name="notes" placeholder="E.g. vegetarian, highchair, anniversary"></textarea>
+        <label>Notes:</label>
+        <textarea name="notes" rows="4"></textarea><br><br>
 
-      <p class="form-note">This form will open your email client so you can send the reservation request — no server required.</p>
+        <button type="submit" class="btn">Send Reservation</button>
+      </form>
 
-      <p class="center"><button class="btn" type="submit">Send Reservation Request</button></p>
+      <div id="reservationPreview" class="sub" style="margin-top:15px;"></div>
+    </section>
+  </main>
 
-      <h3 style="font-family:'Playfair Display',serif;margin-top:18px">Preview</h3>
-      <div id="reservationPreview" class="preview">Your message preview will appear here after submission.</div>
-    </form>
-  </section>
-</main>
-
-<footer class="footer">© 2025 Robertos — Reservations</footer>
-<script src="script.js"></script>
+  <footer class="lux-footer">
+    © 2025 Robertos — Reservations
+  </footer>
 </body>
 </html>
