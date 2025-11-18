@@ -3,75 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Robertos — Reservations</title>
+  <title>Contact — Harris</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="lux-header">
-    <h1 class="lux-logo">Robertos</h1>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html" class="active">Reservations</a>
-      <a href="skills.html">Services</a>
-      <a href="showcase.html">Signature</a>
-      <a href="problem-solving.html">Solutions</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="section">
-      <h1 class="page-title">Book a Table</h1>
-      <p class="lead">We look forward to welcoming you to Robertos. Please use the form below to request a reservation; we will confirm within 24 hours.</p>
+<header class="lux-header">
+  <h1 class="lux-logo">Robertos</h1>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="skills.html">Skills</a>
+    <a href="showcase.html">Business Showcase</a>
+    <a href="problem-solving.html">Problem-Solving</a>
+  </nav>
+</header>
 
-      <div class="card">
-        <form id="reservationForm">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" required placeholder="Your full name">
+<section class="hero-image small-hero" style="
+  background-image:url('https://images.unsplash.com/photo-1528605248644-14dd04022da1');
+"></section>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com">
+<main class="container">
+  <section class="card">
+    <h1>Contact Harris</h1>
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" required placeholder="+44 7...">
+    <p>If you’d like to discuss a project, collaboration or role, contact me here:</p>
 
-          <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:12px;">
-            <div>
-              <label for="date">Date</label>
-              <input id="date" name="date" type="date" required>
-            </div>
-            <div>
-              <label for="time">Time</label>
-              <input id="time" name="time" type="time" required>
-            </div>
-          </div>
+    <p><strong>Email:</strong> 
+      <a href="mailto:harris.email@example.com">harris.email@example.com</a>
+    </p>
 
-          <label for="guests">Guests</label>
-          <select id="guests" name="guests">
-            <option>1</option><option>2</option><option>3</option><option>4</option>
-            <option>5</option><option>6</option><option>7+</option>
-          </select>
+    <h2>Social media</h2>
+    <ul>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+      <li><a href="https://twitter.com/">Twitter / X</a></li>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+    </ul>
+  </section>
+</main>
 
-          <label for="notes">Notes (dietary requirements, occasion)</label>
-          <textarea id="notes" name="notes" placeholder="E.g. vegetarian, highchair, birthday"></textarea>
+<footer class="lux-footer">
+  © 2025 Harris Portfolio
+</footer>
 
-          <p class="form-note">We will confirm your reservation via email. The form opens your email client so you can send the request directly — no server required.</p>
-
-          <p class="center"><button class="btn" type="submit">Send Reservation Request</button></p>
-
-          <div style="margin-top:18px;">
-            <h3 style="font-family:'Playfair Display',serif; margin-bottom:8px;">Reservation Preview</h3>
-            <div id="reservationPreview" class="preview">Your message preview will appear here after you submit the form.</div>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="lux-footer">
-    © 2025 Robertos — Reservations
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
