@@ -1,166 +1,189 @@
-/* ────────────────────────────────────────────────────────────
-   ROBERTOS — MICHELIN GUIDE LUXURY THEME
-   Inspired by guide.michelin.com aesthetic
-   White, deep black, luxury gold, Michelin red
-   ──────────────────────────────────────────────────────────── */
+/* styles.css
+   ROBERTOS — MICHELIN-INSPIRED LUXURY THEME
+   White background, refined typography, red/gold accents, clean tables
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 :root {
-  --black: #111;
-  --red: #DA3434;           /* Michelin Red */
+  --black: #111111;
+  --red: #DA3434;
   --gold: #C8A86B;
-  --grey: #B8B8B8;
+  --muted: #7a7a7a;
   --line: #E6E6E6;
-  --soft-bg: #F9F7F4;        /* Warm luxury ivory */
   --soft-red: #FBECEC;
+  --bg: #FFFFFF;
   --max-width: 1150px;
-  --radius: 14px;
+  --radius: 12px;
 }
 
-/* RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: var(--soft-bg);
   color: var(--black);
+  background: var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
   line-height: 1.7;
-  padding-bottom: 60px;
 }
 
-/* HEADER */
-.lux-header, header {
-  padding: 40px 20px;
-  text-align: center;
+/* Header */
+.lux-header {
   background: #fff;
+  padding: 36px 20px;
+  text-align: center;
   border-bottom: 2px solid var(--line);
 }
 .lux-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 46px;
+  font-size: 44px;
   color: var(--black);
   letter-spacing: 1px;
-  margin-bottom: 8px;
+  font-weight: 700;
 }
 .nav {
   margin-top: 14px;
 }
 .nav a {
-  margin: 0 16px;
+  display: inline-block;
+  margin: 0 14px;
   color: var(--black);
-  font-weight: 600;
   text-decoration: none;
-  font-size: 16px;
-  letter-spacing: .7px;
-  position: relative;
+  font-weight: 600;
+  letter-spacing: .6px;
+  font-size: 15px;
   padding-bottom: 4px;
 }
-.nav a:hover {
-  color: var(--red);
-}
-.nav a.active {
-  color: var(--red);
-  border-bottom: 2px solid var(--red);
-}
+.nav a:hover { color: var(--red); }
+.nav a.active { color: var(--red); border-bottom: 2px solid var(--red); }
 
-/* MAIN CONTAINER */
+/* Container */
 .container {
   max-width: var(--max-width);
-  margin: 40px auto;
+  margin: 36px auto;
   padding: 0 20px;
 }
 
-/* TITLES */
-.page-title, h1, h2, h3 {
+/* Titles */
+.page-title {
   font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin-bottom: 10px;
   color: var(--black);
 }
-h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-h2 {
-  font-size: 30px;
-  margin-top: 25px;
+.lead, .sub {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 18px;
 }
 
-/* CARD SECTION */
+/* Cards / sections */
 .card, .menu-section, .section-block {
   background: #fff;
-  padding: 30px;
-  border-radius: var(--radius);
-  margin-bottom: 35px;
   border: 1px solid var(--line);
-  transition: 0.3s;
+  border-radius: var(--radius);
+  padding: 26px;
+  margin-bottom: 28px;
+  transition: transform .18s ease, box-shadow .18s ease;
 }
-.card:hover,
-.menu-section:hover,
-.section-block:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+.card:hover, .menu-section:hover, .section-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* TABLE — Michelin Style */
-.table, .experience-table, table {
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+@media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+
+/* Tables */
+.table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 14px;
+  border: 1px solid var(--line);
 }
-.table th, .experience-table th {
+.table th {
   font-family: 'Playfair Display', serif;
-  background: #fff;
-  padding: 16px;
-  border-bottom: 2px solid var(--line);
-  font-size: 19px;
-  color: var(--black);
-}
-.table td, .experience-table td {
-  padding: 16px;
+  text-align: left;
+  padding: 14px;
+  font-size: 18px;
+  background: var(--gold);
+  color: #fff;
   border-bottom: 1px solid var(--line);
+}
+.table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+  vertical-align: top;
   background: #fff;
-  font-size: 17px;
 }
-.table tr:hover td {
-  background: var(--soft-red);
-}
+.table tr:last-child td { border-bottom: none; }
 .price {
   color: var(--red);
   font-weight: 700;
   text-align: right;
 }
 
-/* BUTTON */
+/* Menu item layout */
+.menu-item {
+  display:flex;
+  justify-content:space-between;
+  gap: 16px;
+}
+.menu-desc { color: var(--muted); font-size: 15px; }
+
+/* Buttons */
 .btn {
-  display: inline-block;
-  padding: 14px 22px;
+  display:inline-block;
   background: var(--black);
   color: #fff;
+  padding: 12px 18px;
   border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: .8px;
   text-decoration: none;
-  transition: .3s;
+  font-weight: 600;
 }
-.btn:hover {
-  background: var(--red);
+.btn:hover { background: var(--red); }
+
+/* Forms */
+label { display:block; font-weight:600; margin-bottom:6px; color:var(--black); }
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select, textarea {
+  width:100%;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:15px;
+  margin-bottom:14px;
+}
+textarea { min-height:110px; resize:vertical; }
+.form-note { color:var(--muted); font-size:14px; }
+
+/* Preview */
+.preview {
+  background: var(--soft-red);
+  border:1px solid var(--line);
+  padding:14px;
+  border-radius:8px;
+  font-family: monospace;
+  white-space: pre-wrap;
 }
 
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
+/* Footer */
+.lux-footer {
+  text-align:center;
+  padding:28px 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  margin-top: 40px;
+  font-size:14px;
 }
 
-/* FOOTER */
-.lux-footer, footer {
-  text-align: center;
-  padding: 40px 10px;
-  border-top: 2px solid var(--line);
-  margin-top: 60px;
-  font-size: 15px;
-  color: var(--grey);
-
+/* Small utilities */
+.center { text-align:center; }
+.small { font-size:13px; color:var(--muted); }
