@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Business Showcase — Harris</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Robertos — Signature</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header class="lux-header">
-  <h1 class="lux-logo">Robertos</h1>
+<header class="header">
+  <div class="lux-logo">Robertos</div>
   <nav class="nav">
     <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="skills.html">Skills</a>
-    <a href="showcase.html" class="active">Business Showcase</a>
-    <a href="problem-solving.html">Problem-Solving</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Reservations</a>
+    <a href="skills.html">Services</a>
+    <a href="showcase.html" class="active">Signature</a>
+    <a href="problem-solving.html">Solutions</a>
   </nav>
 </header>
 
-<section class="hero-image" style="
-  background-image:url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed6d');
-"></section>
-
 <main class="container">
-
   <section class="card">
-    <h1>Project Showcase</h1>
-
-    <article class="project">
-      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" class="project-img">
-      <h2>Restaurant Digital Transformation System</h2>
-      <p><strong>Role:</strong> CTO / Lead Developer</p>
-      <p><strong>Problem:</strong> Restaurant relied on manual booking & paper notes.</p>
-      <p><strong>Solution:</strong> Built a modern site with booking automation + email generation.</p>
-    </article>
+    <h1 class="page-title">Signature Dishes & Projects</h1>
+    <p class="small">A curated selection that demonstrates our culinary and digital craftsmanship.</p>
   </section>
 
+  <section class="card">
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <div style="flex:1;min-width:260px">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop&s=imgA" alt="Booking System" style="width:100%;border-radius:8px;margin-bottom:12px">
+        <h3 style="font-family:'Playfair Display',serif">Restaurant Booking System</h3>
+        <p><strong>Role:</strong> Lead Developer</p>
+        <p class="small">Implemented an email-driven reservation system with automated confirmation and a reservations log. Reduced phone workload and improved follow-up accuracy.</p>
+      </div>
+
+      <div style="flex:1;min-width:260px">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1200&auto=format&fit=crop&s=imgB" alt="Digital Menu" style="width:100%;border-radius:8px;margin-bottom:12px">
+        <h3 style="font-family:'Playfair Display',serif">Interactive Digital Menu</h3>
+        <p><strong>Role:</strong> Designer / Developer</p>
+        <p class="small">Delivered a mobile-first menu with photography, allergen tags and simple editing interfaces for the owner. Increased clarity and upsell opportunities.</p>
+      </div>
+
+      <div style="flex:1;min-width:260px">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1200&auto=format&fit=crop&s=imgC" alt="Delivery Integration" style="width:100%;border-radius:8px;margin-bottom:12px">
+        <h3 style="font-family:'Playfair Display',serif">Local Delivery Integration</h3>
+        <p><strong>Role:</strong> Project Manager</p>
+        <p class="small">Built an order-capture flow and simple dispatch sheet for kitchen staff. Reduced order errors and improved dispatch speed.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="lux-footer">
-  © 2025 Harris Portfolio
-</footer>
+<footer class="footer">© 2025 Robertos — Signature</footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Robertos — Menu</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="lux-logo">Robertos</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="contact.html">Reservations</a>
+    <a href="skills.html">Services</a>
+    <a href="showcase.html">Signature</a>
+    <a href="problem-solving.html">Solutions</a>
+  </nav>
+</header>
 
+<section class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1543352634-1b8f4e5c9f8a?q=80&w=2000&auto=format&fit=crop&s=aa1b2c3d');height:340px">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-title">Our Menu</div>
+    <div class="hero-sub">A seasonal tasting menu and selected à la carte dishes. Please inform us of allergies or dietary preferences.</div>
+  </div>
+</section>
+
+<main class="container">
+  <section class="card">
+    <h2>Starters</h2>
+
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=900&auto=format&fit=crop&s=thumb1');"></div>
+      <div>
+        <h4>Truffle & Wild Mushroom Arancini <span class="price">£9.50</span></h4>
+        <p class="menu-desc">Creamy risotto, shaved black truffle, saffron aioli — crispy exterior, silky centre.</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop&s=thumb2');"></div>
+      <div>
+        <h4>Seared Scallops <span class="price">£12.00</span></h4>
+        <p class="menu-desc">Buttered fennel, lemon gel, crispy pancetta for a savoury contrast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Mains</h2>
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1541544180-cf2b7b3b69a6?q=80&w=900&auto=format&fit=crop&s=thumb3');"></div>
+      <div>
+        <h4>Slow-Braised Beef Short Rib <span class="price">£22.50</span></h4>
+        <p class="menu-desc">Red wine jus, pommes purée, roasted heritage carrots — fall-apart tender.</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop&s=thumb4');"></div>
+      <div>
+        <h4>Pan-Roasted Sea Bass <span class="price">£20.00</span></h4>
+        <p class="menu-desc">Confit tomatoes, wilted spinach, caper beurre blanc — balanced and bright.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Desserts</h2>
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=900&auto=format&fit=crop&s=thumb5');"></div>
+      <div>
+        <h4>Chocolate Fondant <span class="price">£8.50</span></h4>
+        <p class="menu-desc">Warm molten centre, vanilla bean ice cream — rich and comforting.</p>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=900&auto=format&fit=crop&s=thumb6');"></div>
+      <div>
+        <h4>Cheese Plate <span class="price">£10.00</span></h4>
+        <p class="menu-desc">Selection of three British cheeses, chutney and crackers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Wine & Beverages</h2>
+    <table class="table">
+      <tr><th>Beverage</th><th>Notes</th><th class="price">Price</th></tr>
+      <tr><td>House Red — Montevino</td><td>Medium-bodied, cherry & spice</td><td class="price">£6.50 / glass</td></tr>
+      <tr><td>Finesse Brut Champagne</td><td>Crisp, citrus finish</td><td class="price">£12.00 / glass</td></tr>
+      <tr><td>Artisan Espresso</td><td>Single origin</td><td class="price">£3.50</td></tr>
+    </table>
+  </section>
+</main>
+
+<footer class="footer">© 2025 Robertos — Menu</footer>
 </body>
 </html>
