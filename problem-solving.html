@@ -1,59 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harris Mahmood | Problem-Solving</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harris Mahmood | Problem-Solving Skills</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff7043;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ffd8cc;
+      transform: scale(1.05);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      border-left: 5px solid #fff;
+      padding-left: 0.5rem;
+    }
+
+    .menu-card {
+      background-color: #ff7043;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .skill-dish {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      transition: background 0.3s;
+    }
+
+    .skill-dish:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+
+    .skill-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .skill-icon {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #fff;
+      padding: 4px;
+    }
+
+    .skill-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .skill-name {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .skill-desc {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #fff;
+      max-width: 400px;
+    }
+
+    .skill-level {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #ff7043;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .skill-dish {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .skill-level {
+        margin-top: 0.3rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Harris Mahmood</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="skills.html">Skills</a>
-            <a href="problem-solving.html">Problem-Solving</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Harris Mahmood</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="skills.html">Skills</a>
+      <a href="problem-solving.html">Problem-Solving</a>
+      <a href="showcase.html">Projects</a>
+    </nav>
+  </header>
 
-    <div class="container">
-        <section class="section">
-            <h2>Restaurant Digital Transformation</h2>
-            <p><strong>Business Context:</strong> "Tasteful Bites" restaurant wanted to modernize its digital presence by improving customer engagement, streamlining bookings, and integrating social media channels.</p>
-        </section>
+  <div class="container">
+    <section class="menu-card">
+      <h2>Problem-Solving Menu</h2>
 
-        <section class="section">
-            <h2>Contact & Social Media</h2>
-            <ul>
-                <li>Email: <a href="mailto:restaurant@example.com">restaurant@example.com</a></li>
-                <li>Facebook: <a href="https://facebook.com/tastefulbites" target="_blank">Tasteful Bites</a></li>
-                <li>Instagram: <a href="https://instagram.com/tastefulbites" target="_blank">@TastefulBites</a></li>
-                <li>Twitter/X: <a href="https://twitter.com/tastefulbites" target="_blank">@TastefulBites</a></li>
-            </ul>
-        </section>
+      <!-- Skill 1 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/logic.png" alt="Logical Thinking" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Logical Thinking</div>
+            <div class="skill-desc">Analyze problems and break them into smaller, solvable parts.</div>
+          </div>
+        </div>
+        <div class="skill-level">Expert</div>
+      </div>
 
-        <section class="section">
-            <h2>Booking & Feedback Form</h2>
-            <p>Fill out the form below to make a booking or provide feedback. Click "Submit" to generate an email with your input.</p>
-            <form onsubmit="event.preventDefault(); sendForm();">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your name">
+      <!-- Skill 2 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/algorithm.png" alt="Algorithm Design" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Algorithm Design</div>
+            <div class="skill-desc">Create efficient solutions for complex problems.</div>
+          </div>
+        </div>
+        <div class="skill-level">Advanced</div>
+      </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Your email">
+      <!-- Skill 3 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/debugging.png" alt="Debugging" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Debugging & Troubleshooting</div>
+            <div class="skill-desc">Identify and resolve issues in code or processes.</div>
+          </div>
+        </div>
+        <div class="skill-level">Expert</div>
+      </div>
 
-                <label for="message">Message / Booking Request:</label>
-                <textarea id="message" rows="5" placeholder="Write your message here"></textarea>
+      <!-- Skill 4 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/critical-thinking.png" alt="Critical Thinking" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Critical Thinking</div>
+            <div class="skill-desc">Evaluate solutions critically to choose the best approach.</div>
+          </div>
+        </div>
+        <div class="skill-level">Advanced</div>
+      </div>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
+      <!-- Skill 5 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/creativity.png" alt="Creativity" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Creativity</div>
+            <div class="skill-desc">Think outside the box to develop innovative solutions.</div>
+          </div>
+        </div>
+        <div class="skill-level">Advanced</div>
+      </div>
 
-    <footer>
-        &copy; 2025 Harris Mahmood
-    </footer>
+      <!-- Skill 6 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/time.png" alt="Time Management" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Time Management</div>
+            <div class="skill-desc">Prioritize and manage tasks efficiently to meet deadlines.</div>
+          </div>
+        </div>
+        <div class="skill-level">Intermediate</div>
+      </div>
+
+      <!-- Skill 7 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/analytics.png" alt="Analytical Skills" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Analytical Skills</div>
+            <div class="skill-desc">Interpret data and information to make informed decisions.</div>
+          </div>
+        </div>
+        <div class="skill-level">Advanced</div>
+      </div>
+
+      <!-- Skill 8 -->
+      <div class="skill-dish">
+        <div class="skill-left">
+          <img src="images/icons/teamwork.png" alt="Collaboration" class="skill-icon">
+          <div class="skill-info">
+            <div class="skill-name">Collaboration</div>
+            <div class="skill-desc">Work effectively with others to achieve common goals.</div>
+          </div>
+        </div>
+        <div class="skill-level">Expert</div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Harris Mahmood
+  </footer>
 </body>
 </html>
