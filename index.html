@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Robertos — Home</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robertos — Luxury Italian Dining</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="lux-logo">Robertos</div>
+<header class="lux-header">
+  <h1 class="lux-logo">Robertos</h1>
   <nav class="nav">
     <a href="index.html" class="active">Home</a>
     <a href="menu.html">Menu</a>
@@ -21,55 +21,79 @@
   </nav>
 </header>
 
-<!-- Hero: Italian luxury image (replace with your own if desired) -->
-<section class="hero-image" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2000&auto=format&fit=crop&s=6a9f3f6b5f9f2a7c9f6f6b3e');">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-title">Robertos — Italian Fine Dining</div>
-    <div class="hero-sub">Seasonal Italian flavours, refined technique and modern hospitality.</div>
-    <div class="hero-cta"><a href="menu.html" class="btn">View the Menu</a></div>
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-text-box">
+    <h2>Welcome to Robertos</h2>
+    <p>Experience authentic Italian dining crafted with passion, elegance and modern excellence.</p>
   </div>
 </section>
 
 <main class="container">
-  <section class="card">
-    <h2>Welcome</h2>
-    <p class="small">Robertos offers a curated Italian dining experience with a modern touch. We focus on seasonal ingredients, precise technique and excellent service in an intimate setting.</p>
 
-    <div class="grid">
-      <div>
-        <h3 style="font-family:'Playfair Display',serif;">Our Philosophy</h3>
-        <p class="small">We believe that well-sourced ingredients and careful technique create memorable dishes. Our menu changes seasonally to celebrate local produce.</p>
+  <!-- INTRODUCTION IN BOX -->
+  <section class="box">
+    <h2 class="section-title">A Luxury Dining Experience</h2>
+    <p>
+      Located in the heart of Sheffield, <strong>Robertos</strong> blends traditional Italian heritage 
+      with contemporary fine-dining artistry. Our chefs use the finest ingredients sourced 
+      from Italy and local Yorkshire producers to create dishes that honour flavour, 
+      craftsmanship, and unforgettable hospitality.
+    </p>
+    <p>
+      Whether you're enjoying a signature pasta, a premium cut from our grill selection, 
+      or a handcrafted dessert, every plate is designed to captivate your senses.
+    </p>
+  </section>
+
+  <!-- SIGNATURE DISHES -->
+  <section class="signature-section">
+    <h2 class="section-title">Signature Creations</h2>
+
+    <div class="signature-grid">
+
+      <!-- Dish 1 -->
+      <div class="sig-card">
+        <img src="https://images.unsplash.com/photo-1603079842731-bd3d4b87aa43" alt="Pasta">
+        <div class="sig-text">
+          <h3>Truffle Tagliatelle</h3>
+          <p>Fresh egg pasta with shaved black truffle, Parmigiano-Reggiano & cream.</p>
+        </div>
       </div>
-      <div>
-        <h3 style="font-family:'Playfair Display',serif;">Digital Hospitality</h3>
-        <p class="small">In addition to dining, Robertos provides lightweight digital solutions for restaurants — reservation automation, interactive menus and simple operational tools.</p>
+
+      <!-- Dish 2 -->
+      <div class="sig-card">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141" alt="Steak">
+        <div class="sig-text">
+          <h3>Bistecca Fiorentina</h3>
+          <p>Prime Tuscan-style T-bone cooked over flame with rosemary & sea salt.</p>
+        </div>
       </div>
+
+      <!-- Dish 3 -->
+      <div class="sig-card">
+        <img src="https://images.unsplash.com/photo-1473093226795-af9932fe5856" alt="Dessert">
+        <div class="sig-text">
+          <h3>Lemon Mascarpone Tart</h3>
+          <p>Velvety lemon cream, caramelised citrus & crisp buttery pastry.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="small-hero-row">
-    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1547592166-11d9b5b3c7b4?q=80&w=1200&auto=format&fit=crop&s=9b2c4f1c');">
-      <div class="overlay"></div>
-      <div class="text">Seasonal Ingredients</div>
-    </div>
-    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&s=jkl012');">
-      <div class="overlay"></div>
-      <div class="text">Chef-Led Tasting Menus</div>
-    </div>
-    <div class="small-hero" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop&s=abc123');">
-      <div class="overlay"></div>
-      <div class="text">Intimate Dining Room</div>
-    </div>
+  <!-- RESERVATIONS CALL TO ACTION -->
+  <section class="cta-box">
+    <h2>Join Us for an Unforgettable Evening</h2>
+    <p>Reserve your table and indulge in a refined Italian dining experience.</p>
+    <a href="contact.html" class="cta-btn">Book a Table</a>
   </section>
 
-  <section class="card">
-    <h2>Reservations</h2>
-    <p class="small">Book a table online or contact us for private dining. We kindly ask that you inform us of any dietary requirements in advance.</p>
-    <p class="center"><a class="btn" href="contact.html">Reserve a Table</a></p>
-  </section>
 </main>
 
-<footer class="footer">© 2025 Robertos — Italian Fine Dining</footer>
+<footer class="lux-footer">
+  © 2025 Robertos — Luxury Italian Restaurant
+</footer>
+
 </body>
 </html>
