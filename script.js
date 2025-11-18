@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     ];
     const body = encodeURIComponent(bodyLines.join('\n'));
 
+    const preview = document.getElementById('reservationPreview');
+    if(preview){
+      preview.textContent = `To: reservations@robertos.com\nSubject: Reservation Request — Robertos — ${name}\n\n${bodyLines.join('\n')}`;
+    }
+
     const mailto = `mailto:reservations@robertos.com?subject=${subject}&body=${body}`;
     window.location.href = mailto;
   });
